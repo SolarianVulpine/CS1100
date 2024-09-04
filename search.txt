@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ls -l
+find file1.txt
+echo "file found" >> file1.txt
+cat file1.txt

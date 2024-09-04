@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ls -l
+echo "File to remove:"
+read name
+rm $name
+echo "$name Has been removed."
