@@ -1,0 +1,11 @@
+    1  mkdir system_info && cd system_info
+    2  touch info.txt
+    3  echo "$(pwd)" >> info.txt 
+    4  echo "$(ls -l /etc)" >> info.txt 
+    5  cp /etc/os-release .
+    6  mv os-release os_details.txt
+    7  echo "$(cat os_details.txt)" >> info.txt 
+    8  echo "$(uname -a)" >> info.txt 
+    9  echo "$(df -h)" >> info.txt 
+   10  chmod 600 info.txt 
+   11  history | tail -n 12 > command_history.txt
