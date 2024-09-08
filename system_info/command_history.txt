@@ -1,0 +1,12 @@
+   46  mkdir ~/system_info
+   47  cd ~/system_info
+   48  touch info.txt
+   49  pwd >> info.txt 
+   50  ls -l /etc >> info.txt 
+   51  cp /etc/os-release ~/system_info
+   52  mv ~/system_info/os-release ~/system_info/os_details.txt
+   53  cat os_details.txt >> info.txt 
+   54  uname -a >> info.txt 
+   55  df -h >> info.txt 
+   56  chmod 600 info.txt
+   57  history | tail -n 12 > command_history.txt

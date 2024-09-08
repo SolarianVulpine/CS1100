@@ -1,0 +1,188 @@
+/voc/work/system_info
+total 768
+drwxr-xr-x 1 root root    4096 Jul 31  2023 ImageMagick-6
+drwxr-xr-x 2 root root    4096 Apr 30  2022 PackageKit
+drwxr-xr-x 1 root root    4096 Aug 26  2021 X11
+-rw-r--r-- 1 root root    3028 Jul 23  2021 adduser.conf
+drwxr-xr-x 1 root root    4096 Aug 26  2021 alsa
+drwxr-xr-x 1 root root    4096 Jun  7 04:13 alternatives
+drwxr-xr-x 1 root root    4096 Jul 10 05:47 apparmor.d
+drwxr-xr-x 1 root root    4096 Aug 26  2021 apport
+drwxr-xr-x 1 root root    4096 Jun  7 03:55 apt
+-rw-r--r-- 1 root root    2319 Feb 25  2020 bash.bashrc
+drwxr-xr-x 1 root root    4096 Jul 10 05:47 bash_completion.d
+-rw-r--r-- 1 root root     367 Apr 14  2020 bindresvport.blacklist
+drwxr-xr-x 2 root root    4096 Jul 21  2021 binfmt.d
+drwxr-xr-x 1 root root    4096 Aug 26  2021 ca-certificates
+-rw-r--r-- 1 root root    6638 Jun 10  2023 ca-certificates.conf
+-rw-r--r-- 1 root root    5917 Jan 12  2023 ca-certificates.conf.dpkg-old
+drwxr-xr-x 1 root root    4096 Jan 12  2023 cron.d
+drwxr-xr-x 1 root root    4096 Jul 10 05:47 cron.daily
+drwxr-xr-x 1 root root    4096 Aug 26  2021 dbus-1
+drwxr-xr-x 3 root root    4096 Aug 26  2021 dconf
+-rw-r--r-- 1 root root    2969 Aug  3  2019 debconf.conf
+-rw-r--r-- 1 root root      13 Dec  5  2019 debian_version
+drwxr-xr-x 1 root root    4096 Jun  7 03:57 default
+-rw-r--r-- 1 root root     604 Sep 15  2018 deluser.conf
+drwxr-xr-x 1 root root    4096 Aug 26  2021 dhcp
+drwxr-xr-x 2 root root    4096 Aug 26  2021 dictionaries-common
+drwxr-xr-x 1 root root    4096 Jan 12  2023 dpkg
+-rw-r--r-- 1 root root     685 Feb 14  2020 e2scrub.conf
+drwxr-xr-x 1 root root    4096 Aug 26  2021 emacs
+-rw-r--r-- 1 root root     106 Jul 23  2021 environment
+-rw-r--r-- 1 root root    1816 Dec 27  2019 ethertypes
+drwxr-xr-x 1 root root    4096 Jul 10 05:47 firefox
+drwxr-xr-x 1 root root    4096 Aug 26  2021 fonts
+-rw-r--r-- 1 root root      37 Jul 23  2021 fstab
+-rw-r--r-- 1 root root     280 Jun 20  2014 fuse.conf
+-rw-r--r-- 1 root root    2584 Feb  1  2020 gai.conf
+drwxr-xr-x 5 root root    4096 Aug 15  2022 gconf
+drwxr-xr-x 2 root root    4096 Aug  7 16:09 gdb
+drwxr-xr-x 4 root root    4096 Apr 30  2022 ghostscript
+drwxr-xr-x 3 root root    4096 Aug 26  2021 glvnd
+drwxr-xr-x 2 root root    4096 Apr 30  2022 groff
+-rw-r--r-- 1 root root     752 Jan 12  2023 group
+-rw-r--r-- 1 root root     739 Aug 15  2022 group-
+-rw-r----- 1 root shadow   629 Jan 12  2023 gshadow
+-rw-r----- 1 root shadow   619 Aug 15  2022 gshadow-
+drwxr-xr-x 3 root root    4096 Aug 26  2021 gss
+drwxr-xr-x 2 root root    4096 Aug 26  2021 gtk-2.0
+drwxr-xr-x 1 root root    4096 Aug 15  2022 gtk-3.0
+drwxr-xr-x 1 root root    4096 Sep  1  2021 guacamole
+-rw-r--r-- 1 root root      92 Dec  5  2019 host.conf
+-rw-r--r-- 1 root root       7 Sep  7 22:51 hostname
+-rw-r--r-- 1 root root     169 Sep  7 22:51 hosts
+-rw-r--r-- 1 root root     411 Aug 26  2021 hosts.allow
+-rw-r--r-- 1 root root     711 Aug 26  2021 hosts.deny
+drwxr-xr-x 1 root root    4096 Jun  7 04:02 init.d
+-rw-r--r-- 1 root root    1748 Feb 25  2020 inputrc
+-rw-r--r-- 1 root root      26 Mar 14  2023 issue
+-rw-r--r-- 1 root root      19 Mar 14  2023 issue.net
+drwxr-xr-x 1 root root    4096 Jun  7 04:02 java-11-openjdk
+drwxr-xr-x 5 root root    4096 Jun  7 04:13 java-21-openjdk
+drwxr-xr-x 1 root root    4096 Aug 26  2021 kernel
+-rw-r--r-- 1 root root   49113 Aug  7 16:09 ld.so.cache
+-rw-r--r-- 1 root root      34 Apr 14  2020 ld.so.conf
+drwxr-xr-x 1 root root    4096 Jun  7 04:02 ld.so.conf.d
+drwxr-xr-x 1 root root    4096 Jun  7 04:01 ldap
+-rw-r--r-- 1 root root     267 Dec  5  2019 legal
+-rw-r--r-- 1 root root     191 Feb 18  2020 libaudit.conf
+drwxr-xr-x 2 root root    4096 Jun 25  2019 libpaper.d
+-rw-r--r-- 1 root root    2996 Dec 16  2020 locale.alias
+-rw-r--r-- 1 root root    9442 Jun  7 04:01 locale.gen
+lrwxrwxrwx 1 root root      27 Jul 10 05:47 localtime -> /usr/share/zoneinfo/Etc/UTC
+drwxr-xr-x 1 root root    4096 Aug 26  2021 logcheck
+-rw-r--r-- 1 root root   10550 Feb  7  2020 login.defs
+drwxr-xr-x 1 root root    4096 Jan 15  2024 logrotate.d
+-rw-r--r-- 1 root root     104 Mar 14  2023 lsb-release
+-rw-r--r-- 1 root root      33 Aug 26  2021 machine-id
+-rw-r--r-- 1 root root     111 Jan 16  2020 magic
+-rw-r--r-- 1 root root     111 Jan 16  2020 magic.mime
+-rw-r--r-- 1 root root   14987 Jul 10 05:48 mailcap
+-rw-r--r-- 1 root root     449 Oct 18  2019 mailcap.order
+drwxr-xr-x 2 root root    4096 Aug 26  2021 mc
+-rw-r--r-- 1 root root     288 Feb 26  2020 mecabrc
+drwxr-xr-x 2 root root    4096 Aug 26  2021 menu-methods
+-rw-r--r-- 1 root root   24546 Oct 18  2019 mime.types
+-rw-r--r-- 1 root root     808 Feb 14  2020 mke2fs.conf
+drwxr-xr-x 1 root root    4096 Jun  7 03:56 modules-load.d
+lrwxrwxrwx 1 root root      12 Sep  7 22:51 mtab -> /proc/mounts
+drwxr-xr-x 1 root root    4096 Jul 10 05:47 mysql
+drwxr-xr-x 8 root root    4096 Aug 26  2021 networkd-dispatcher
+-rw-r--r-- 1 root root      91 Dec  5  2019 networks
+-rw-r--r-- 1 root root     510 Aug 26  2021 nsswitch.conf
+drwxr-xr-x 2 root root    4096 Jul 23  2021 opt
+lrwxrwxrwx 1 root root      21 Jan  2  2024 os-release -> ../usr/lib/os-release
+-rw-r--r-- 1 root root     552 Dec 17  2019 pam.conf
+drwxr-xr-x 1 root root    4096 Jun  7 04:02 pam.d
+-rw-r--r-- 1 root root       3 Apr 30  2022 papersize
+-rw-r--r-- 1 root root    1631 Aug  7 16:03 passwd
+-rw-r--r-- 1 root root    1636 Jan 12  2023 passwd-
+drwxr-xr-x 1 root root    4096 Aug 26  2021 perl
+drwxr-xr-x 1 root root    4096 Apr 30  2022 pm
+drwxr-xr-x 1 root root    4096 Aug 26  2021 polkit-1
+-rw-r--r-- 1 root root     581 Dec  5  2019 profile
+drwxr-xr-x 1 root root    4096 Jul 10 05:47 profile.d
+-rw-r--r-- 1 root root    2932 Apr  1  2013 protocols
+drwxr-xr-x 1 root root    4096 Jan 12  2023 pulse
+drwxr-xr-x 2 root root    4096 Aug 26  2021 python3
+drwxr-xr-x 1 root root    4096 Jun  7 04:02 python3.10
+drwxr-xr-x 1 root root    4096 Jul 10 05:47 python3.12
+drwxr-xr-x 1 root root    4096 Jul 10 05:47 python3.8
+drwxr-xr-x 1 root root    4096 Apr 30  2022 rc0.d
+drwxr-xr-x 1 root root    4096 Aug 26  2021 rc1.d
+drwxr-xr-x 1 root root    4096 Aug 12  2022 rc2.d
+drwxr-xr-x 1 root root    4096 Aug 12  2022 rc3.d
+drwxr-xr-x 1 root root    4096 Aug 12  2022 rc4.d
+drwxr-xr-x 1 root root    4096 Aug 12  2022 rc5.d
+drwxr-xr-x 1 root root    4096 Apr 30  2022 rc6.d
+drwxr-xr-x 1 root root    4096 Aug 26  2021 rcS.d
+-rw-r--r-- 1 root root     270 Sep  7 22:51 resolv.conf
+lrwxrwxrwx 1 root root      13 Dec  5  2023 rmt -> /usr/sbin/rmt
+-rw-r--r-- 1 root root     887 Apr  1  2013 rpc
+drwxr-xr-x 1 root root    4096 Jul 10 05:47 rsyslog.d
+drwxr-xr-x 1 root root    4096 Jun  7 03:56 security
+drwxr-xr-x 2 root root    4096 Jul 23  2021 selinux
+drwxr-xr-x 1 root root    4096 Jan 12  2023 sensors.d
+-rw-r--r-- 1 root root   10593 Nov  6  2019 sensors3.conf
+-rw-r--r-- 1 root root   14464 Feb 16  2020 services
+drwxr-xr-x 2 root root    4096 Apr 30  2022 sgml
+-rw-r----- 1 root shadow   946 Jan 12  2023 shadow
+-rw-r----- 1 root shadow   946 Jan 12  2023 shadow-
+-rw-r--r-- 1 root root     116 Jul 23  2021 shells
+drwxr-xr-x 1 root root    4096 Jan 12  2023 skel
+drwxr-xr-x 1 root root    4096 Jan 15  2024 ssh
+drwxr-xr-x 1 root root    4096 Jun  7 04:02 ssl
+-rw-r--r-- 1 root root      45 Aug 26  2021 subgid
+-rw-r--r-- 1 root root      23 Aug 26  2021 subgid-
+-rw-r--r-- 1 root root      45 Aug 26  2021 subuid
+-rw-r--r-- 1 root root      23 Aug 26  2021 subuid-
+-r--r----- 1 root root     755 Jan 19  2021 sudoers
+drwxr-xr-x 1 root root    4096 Aug  7 16:03 sudoers.d
+drwxr-xr-x 1 root root    4096 Aug 26  2021 supervisor
+-rw-r--r-- 1 root root    2351 Feb 13  2020 sysctl.conf
+drwxr-xr-x 1 root root    4096 Jun  7 03:56 sysctl.d
+drwxr-xr-x 1 root root    4096 Jun  7 04:02 systemd
+drwxr-xr-x 1 root root    4096 Jun 10  2023 terminfo
+-rw-r--r-- 1 root root       8 Jul 10 05:47 timezone
+drwxr-xr-x 2 root root    4096 Jul 21  2021 tmpfiles.d
+drwxr-xr-x 1 root root    4096 Aug 26  2021 tomcat9
+-rw-r--r-- 1 root root    1260 Dec 14  2018 ucf.conf
+drwxr-xr-x 1 root root    4096 Jun  7 04:02 udev
+drwxr-xr-x 1 root root    4096 Jun  7 03:56 update-motd.d
+-rw-r--r-- 1 root root      51 Aug 28  2019 vdpau_wrapper.cfg
+drwxr-xr-x 1 root root    4096 Jun  7 04:01 vim
+drwxr-xr-x 1 root root    4096 Aug  7 16:09 vocareum
+drwxr-xr-x 5 root root    4096 Aug 26  2021 vulkan
+-rw-r--r-- 1 root root    4942 Jul 24  2019 wgetrc
+-rw-r--r-- 1 root root     642 Sep 24  2019 xattr.conf
+drwxr-xr-x 1 root root    4096 Aug 26  2021 xdg
+drwxr-xr-x 2 root root    4096 Apr 30  2022 xml
+drwxr-xr-x 1 root root    4096 Sep  2  2021 xrdp
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+Linux vscode 5.15.0-1064-aws #70~20.04.1-Ubuntu SMP Fri Jun 14 15:42:13 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Filesystem                                                                                                         Size  Used Avail Use% Mounted on
+overlay                                                                                                            311G  239G   72G  78% /
+tmpfs                                                                                                               64M     0   64M   0% /dev
+tmpfs                                                                                                               31G     0   31G   0% /sys/fs/cgroup
+shm                                                                                                                128M     0  128M   0% /dev/shm
+fs-097703c9c7c0f20ec.efs.us-west-2.amazonaws.com:/teacher/eee_T_3433913/asn3281477_4/asn3281478_1/startercode.0    8.0E  3.3T  8.0E   1% /voc/startercode
+fs-097703c9c7c0f20ec.efs.us-west-2.amazonaws.com:/teacher/eee_T_3433913/asn3281477_4/asn3281478_1/asnlib.0/public  8.0E  3.3T  8.0E   1% /voc/public
+fs-097703c9c7c0f20ec.efs.us-west-2.amazonaws.com:/work/eee_W_3532084/asn3281477_4/asn3281478_1/work                8.0E  3.3T  8.0E   1% /voc/work
+fs-097703c9c7c0f20ec.efs.us-west-2.amazonaws.com:/course129452/asn3281477/asn3281478/data                          8.0E  3.3T  8.0E   1% /voc/data
+/dev/root                                                                                                          311G  239G   72G  78% /etc/hosts
+fs-097703c9c7c0f20ec.efs.us-west-2.amazonaws.com:/teacher/eee_T_3433913/lib/public                                 8.0E  3.3T  8.0E   1% /voc/course/public
+tmpfs                                                                                                               31G     0   31G   0% /proc/acpi
+tmpfs                                                                                                               31G     0   31G   0% /proc/scsi
+tmpfs                                                                                                               31G     0   31G   0% /sys/firmware

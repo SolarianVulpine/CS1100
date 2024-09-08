@@ -1,0 +1,33 @@
+2024-09-07 22:30:19.726 [info] Extension host with pid 84 started
+2024-09-07 22:30:19.739 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-228f13ef/vscode.lock': Lock acquired.
+2024-09-07 22:30:19.824 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2024-09-07 22:30:19.825 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-09-07 22:30:19.827 [info] ExtensionService#_doActivateExtension synedra.auto-run-command, startup: true, activationEvent: '*'
+2024-09-07 22:30:19.919 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-09-07 22:30:19.919 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-09-07 22:30:20.103 [info] Eager extensions activated
+2024-09-07 22:30:20.103 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2024-09-07 22:30:20.107 [info] ExtensionService#_doActivateExtension cweijan.vscode-database-client2, startup: false, activationEvent: 'onStartupFinished'
+2024-09-07 22:30:20.107 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2024-09-07 22:30:20.110 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-09-07 22:30:20.111 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2024-09-07 22:30:20.111 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-09-07 22:30:20.114 [info] ExtensionService#_doActivateExtension ms-dotnettools.vscode-dotnet-runtime, startup: false, activationEvent: 'onStartupFinished'
+2024-09-07 22:30:20.114 [info] ExtensionService#_doActivateExtension vadimcn.vscode-lldb, startup: false, activationEvent: 'onStartupFinished'
+2024-09-07 22:30:21.941 [error] Error: Extension dbclient-jdbc not found!
+	at hg.<anonymous> (/usr/local/lib/code-server-4.89.1/lib/vscode/extensions/cweijan.vscode-database-client2-7.4.4/out/extension.js:147280:15)
+	at Generator.next (<anonymous>)
+	at /usr/local/lib/code-server-4.89.1/lib/vscode/extensions/cweijan.vscode-database-client2-7.4.4/out/extension.js:59:25
+	at new Promise (<anonymous>)
+	at N (/usr/local/lib/code-server-4.89.1/lib/vscode/extensions/cweijan.vscode-database-client2-7.4.4/out/extension.js:45:22)
+	at hg.upgradeJDBC (/usr/local/lib/code-server-4.89.1/lib/vscode/extensions/cweijan.vscode-database-client2-7.4.4/out/extension.js:147276:12)
+	at Et.initTreeView (/usr/local/lib/code-server-4.89.1/lib/vscode/extensions/cweijan.vscode-database-client2-7.4.4/out/extension.js:157375:8)
+	at Et.init (/usr/local/lib/code-server-4.89.1/lib/vscode/extensions/cweijan.vscode-database-client2-7.4.4/out/extension.js:157368:78)
+	at cnr (/usr/local/lib/code-server-4.89.1/lib/vscode/extensions/cweijan.vscode-database-client2-7.4.4/out/extension.js:158304:10)
+	at J.kb (/usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:159:14275)
+	at J.jb (/usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:159:13986)
+	at /usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:159:11977
+	at async h.n (/usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:143:6271)
+	at async h.m (/usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:143:6234)
+	at async h.l (/usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:143:5691)
+2024-09-07 22:41:08.239 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'

@@ -1,0 +1,76 @@
+[2024-09-06T04:58:17.646Z] info  code-server 4.89.1 effc6e95b4ad1c5ac5f9083ec06663ba4a2e005c
+[2024-09-06T04:58:17.647Z] info  Using user-data-dir /voc/work/.local/share/code-server
+[2024-09-06T04:58:17.663Z] info  Using config file /voc/work/.config/code-server/config.yaml
+[2024-09-06T04:58:17.663Z] info  HTTP server listening on http://0.0.0.0:8081/
+[2024-09-06T04:58:17.663Z] info    - Authentication is disabled
+[2024-09-06T04:58:17.663Z] info    - Not serving HTTPS
+[2024-09-06T04:58:17.663Z] info  Session server listening on /voc/work/.local/share/code-server/code-server-ipc.sock
+[04:58:19] 
+
+
+
+
+[04:58:19] 
+
+
+
+
+[04:58:19] Extension host agent started.
+[04:58:19] Extension host agent started.
+[04:58:19] Started initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+[04:58:19] Started initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+[04:58:19] Completed initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+[04:58:19] Completed initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+[04:58:21] [172.16.0.1][f6fb7a0e][ManagementConnection] New connection established.
+[04:58:22] [172.16.0.1][96a51b2b][ExtensionHostConnection] New connection established.
+[04:58:22] [172.16.0.1][96a51b2b][ExtensionHostConnection] <86> Launched Extension Host Process.
+[05:08:42] [172.16.0.1][f6fb7a0e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[05:08:42] [172.16.0.1][96a51b2b][ExtensionHostConnection] <86> Extension Host Process exited with code: 0, signal: null.
+[2024-09-07T22:30:14.214Z] info  code-server 4.89.1 effc6e95b4ad1c5ac5f9083ec06663ba4a2e005c
+[2024-09-07T22:30:14.215Z] info  Using user-data-dir /voc/work/.local/share/code-server
+[2024-09-07T22:30:14.235Z] info  Using config file /voc/work/.config/code-server/config.yaml
+[2024-09-07T22:30:14.235Z] info  HTTP server listening on http://0.0.0.0:8081/
+[2024-09-07T22:30:14.235Z] info    - Authentication is disabled
+[2024-09-07T22:30:14.235Z] info    - Not serving HTTPS
+[2024-09-07T22:30:14.235Z] info  Session server listening on /voc/work/.local/share/code-server/code-server-ipc.sock
+[22:30:15] 
+
+
+
+
+[22:30:15] Extension host agent started.
+[22:30:17] [172.16.0.1][e89e0729][ManagementConnection] New connection established.
+[22:30:18] [172.16.0.1][31b80297][ExtensionHostConnection] New connection established.
+[22:30:18] [172.16.0.1][31b80297][ExtensionHostConnection] <84> Launched Extension Host Process.
+[2024-09-07T22:49:58.948Z] info  code-server 4.89.1 effc6e95b4ad1c5ac5f9083ec06663ba4a2e005c
+[2024-09-07T22:49:58.949Z] info  Using user-data-dir /voc/work/.local/share/code-server
+[2024-09-07T22:49:58.969Z] info  Using config file /voc/work/.config/code-server/config.yaml
+[2024-09-07T22:49:58.970Z] info  HTTP server listening on http://0.0.0.0:8081/
+[2024-09-07T22:49:58.970Z] info    - Authentication is disabled
+[2024-09-07T22:49:58.970Z] info    - Not serving HTTPS
+[2024-09-07T22:49:58.970Z] info  Session server listening on /voc/work/.local/share/code-server/code-server-ipc.sock
+[22:50:00] 
+
+
+
+
+[22:50:00] Extension host agent started.
+[22:50:02] [172.16.0.1][79036373][ManagementConnection] New connection established.
+[22:50:03] [172.16.0.1][59dac1b0][ExtensionHostConnection] New connection established.
+[22:50:03] [172.16.0.1][59dac1b0][ExtensionHostConnection] <84> Launched Extension Host Process.
+[2024-09-07T22:51:51.602Z] info  code-server 4.89.1 effc6e95b4ad1c5ac5f9083ec06663ba4a2e005c
+[2024-09-07T22:51:51.603Z] info  Using user-data-dir /voc/work/.local/share/code-server
+[2024-09-07T22:51:51.620Z] info  Using config file /voc/work/.config/code-server/config.yaml
+[2024-09-07T22:51:51.620Z] info  HTTP server listening on http://0.0.0.0:8081/
+[2024-09-07T22:51:51.620Z] info    - Authentication is disabled
+[2024-09-07T22:51:51.620Z] info    - Not serving HTTPS
+[2024-09-07T22:51:51.620Z] info  Session server listening on /voc/work/.local/share/code-server/code-server-ipc.sock
+[22:51:52] 
+
+
+
+
+[22:51:52] Extension host agent started.
+[22:51:54] [172.16.0.1][dc7e9a7b][ManagementConnection] New connection established.
+[22:51:55] [172.16.0.1][ea9d7f1c][ExtensionHostConnection] New connection established.
+[22:51:56] [172.16.0.1][ea9d7f1c][ExtensionHostConnection] <73> Launched Extension Host Process.

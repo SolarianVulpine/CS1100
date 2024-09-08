@@ -1,0 +1,51 @@
+[04:58:19] K [Error]: Unable to write file '/voc/work/.local/share/code-server/User/globalStorage/storage.json' (EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, rename '/voc/work/.local/share/code-server/User/globalStorage/storage.json.vsctmp' -> '/voc/work/.local/share/code-server/User/globalStorage/storage.json')
+    at E.writeFile (/usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/server/node/server.main.js:119:16384)
+    at async y.t (/usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/server/node/server.main.js:125:6205) {
+  fileOperationResult: 1,
+  options: { atomic: { postfix: '.vsctmp' } }
+}
+File not found: /usr/local/lib/code-server-4.89.1/lib/vscode/out/vsda_bg.wasm
+File not found: /usr/local/lib/code-server-4.89.1/lib/vscode/out/vsda.js
+[04:58:22] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[04:58:22] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[04:58:22] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[04:58:22] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[04:58:22] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[04:58:22] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[04:58:23] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[04:58:24] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[04:58:24] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+File not found: /usr/local/lib/code-server-4.89.1/lib/vscode/out/vsda_bg.wasm
+File not found: /usr/local/lib/code-server-4.89.1/lib/vscode/out/vsda.js
+[22:30:18] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:30:18] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:30:18] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:30:18] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:30:18] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:30:19] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:30:20] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:30:20] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:30:21] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+File not found: /usr/local/lib/code-server-4.89.1/lib/vscode/out/vsda_bg.wasm
+File not found: /usr/local/lib/code-server-4.89.1/lib/vscode/out/vsda.js
+[22:50:03] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:50:03] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:50:03] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:50:03] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:50:03] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:50:04] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:50:05] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:50:05] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:50:06] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:51:04] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+File not found: /usr/local/lib/code-server-4.89.1/lib/vscode/out/vsda_bg.wasm
+File not found: /usr/local/lib/code-server-4.89.1/lib/vscode/out/vsda.js
+[22:51:55] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:51:57] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:51:58] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:52:11] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:52:12] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:52:12] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:52:12] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:52:12] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+[22:52:13] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.

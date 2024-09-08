@@ -1,0 +1,18 @@
+2024-09-07 22:51:52.546 [info] 
+
+
+
+
+2024-09-07 22:51:52.552 [info] Extension host agent started.
+2024-09-07 22:51:54.744 [info] [172.16.0.1][dc7e9a7b][ManagementConnection] New connection established.
+2024-09-07 22:51:55.761 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-07 22:51:55.963 [info] [172.16.0.1][ea9d7f1c][ExtensionHostConnection] New connection established.
+2024-09-07 22:51:56.014 [info] [172.16.0.1][ea9d7f1c][ExtensionHostConnection] <73> Launched Extension Host Process.
+2024-09-07 22:51:57.250 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-07 22:51:58.796 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-07 22:52:11.993 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-07 22:52:12.234 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-07 22:52:12.309 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-07 22:52:12.534 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-07 22:52:12.810 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-07 22:52:13.231 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.

@@ -1,0 +1,33 @@
+2024-09-06 04:58:19.057 [info] 
+
+
+
+
+2024-09-06 04:58:19.057 [info] Extension host agent started.
+2024-09-06 04:58:19.070 [info] 
+
+
+
+
+2024-09-06 04:58:19.070 [info] Extension host agent started.
+2024-09-06 04:58:19.077 [info] Started initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+2024-09-06 04:58:19.078 [info] Started initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+2024-09-06 04:58:19.093 [error] Error: Unable to write file '/voc/work/.local/share/code-server/User/globalStorage/storage.json' (EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, rename '/voc/work/.local/share/code-server/User/globalStorage/storage.json.vsctmp' -> '/voc/work/.local/share/code-server/User/globalStorage/storage.json')
+    at E.writeFile (/usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/server/node/server.main.js:119:16384)
+    at async y.t (/usr/local/lib/code-server-4.89.1/lib/vscode/out/vs/server/node/server.main.js:125:6205)
+2024-09-06 04:58:19.096 [info] Completed initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+2024-09-06 04:58:19.101 [info] Completed initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+2024-09-06 04:58:21.081 [info] [172.16.0.1][f6fb7a0e][ManagementConnection] New connection established.
+2024-09-06 04:58:22.185 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-06 04:58:22.276 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-06 04:58:22.348 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-06 04:58:22.498 [info] [172.16.0.1][96a51b2b][ExtensionHostConnection] New connection established.
+2024-09-06 04:58:22.509 [info] [172.16.0.1][96a51b2b][ExtensionHostConnection] <86> Launched Extension Host Process.
+2024-09-06 04:58:22.765 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-06 04:58:22.786 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-06 04:58:22.797 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-06 04:58:23.659 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-06 04:58:24.589 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-06 04:58:24.695 [warning] [csharp]: Couldn't find message for key configuration.dotnet.unitTests.runSettingsPath.markdownDescription.
+2024-09-06 05:08:42.522 [info] [172.16.0.1][f6fb7a0e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-09-06 05:08:42.578 [info] [172.16.0.1][96a51b2b][ExtensionHostConnection] <86> Extension Host Process exited with code: 0, signal: null.
