@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#answer=$(( ($RANDOM % 10) + 1 ))
+answer=5
+attempts=1
+#echo "$answer"
+echo "Welcome to the Number Guessing Game!"
+#echo -n "Guess the number (1-10) or enter '0' to quit: "
+while true; do
+    echo -n "Guess the number (1-10) or enter '0' to quit: "
+        read guess
+        if [[ "$guess" -eq "0" ]]; then
+            echo "Thanks for playing, Goodbye!"
+            exit 0
+        elif [[ "$guess" -lt "$answer" ]]; then
+            echo "Too low! Try again. "
+            attempts=$((attempts + 1))
+        elif [[ "$guess" -gt "$answer" ]]; then
+            echo "Too high! Try again. "
+            attempts=$((attempts + 1))
+        elif [[ "$guess" -eq "$answer" ]]; then
+            if [ "$attempts" -eq 1 ]; then
+                echo "Congratulations! You guessed the correct number in $attempts attempt."
+            elif [ "$attempts" -gt 1 ]; then
+                echo "Congratulations! You guessed the correct number in $attempts attempts."
+            fi
+        break
+    fi
+done

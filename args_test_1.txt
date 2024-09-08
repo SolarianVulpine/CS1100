@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Hello, $1!"
+
+#this script requires that the user enters information into the same
+#line as and immediately after typing the run command
+#example ./args_test_1.txt Torin will take that 1 argument <Torin> and
+#print it in the place of $1

@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Name? "
+read name
+echo "Hello, $name!"
+
+#This version uses the <read> command to expect user input after running the file
+#instead of needing the argument to be included in the run command
