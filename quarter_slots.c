@@ -58,7 +58,7 @@ int main ()
         /*exit case uses the number 0 as an early exit then tells user how much they made in dollars*/
         if (bet == 0)
         {
-            printf("Cashing Out. You ended with $%.02f.", balance);
+            printf("Cashing out. You ended with $%.02f.", balance);
             break;;
         }
 
