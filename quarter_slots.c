@@ -89,7 +89,7 @@ int main ()
         }
         else if (bet > quarters)
         {
-            printf("")
+            printf("Invalid bet. Please enter a valid number of quarters. \n");
             continue;
         }
         
