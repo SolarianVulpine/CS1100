@@ -37,7 +37,7 @@ int main ()
     int x = 1; /*keeps while loop true*/
 
     // printf("%d \n", slot);
-    printf("Welcome to the Betting Game!\nYou have $20 worth of quarters.\n\n");
+    printf("Welcome to the Betting Game!\nYou have $20 worth of quarters.\n");
 
     while(x == 1)/*begins an infinite loop*/
     {
@@ -51,14 +51,14 @@ int main ()
         }
 
         /*prompts user with current balance and asks for bet total reads bet with scanf*/
-        printf("You have %d quarters ($%.02f).\n", quarters, balance);
+        printf("\nYou have %d quarters ($%.02f).\n", quarters, balance);
         printf("Enter the number of quarters to bet (or 0 to cash out): ");
         scanf("%d", &bet);
 
         /*exit case uses the number 0 as an early exit then tells user how much they made in dollars*/
         if (bet == 0)
         {
-            printf("Cashing out. You ended with $%.02f.", balance);
+            printf("Cashing out. You ended with $%.02f.\n", balance);
             break;;
         }
 
