@@ -28,8 +28,10 @@
 
 int main ()
 {
+    /*seeds the random values based on whatever the current timestamp is*/
     srand(time(NULL));
 
+    /*initialize variables*/
     int quarters = 80;
     float balance ;
     int slot ;
@@ -52,7 +54,7 @@ int main ()
 
         /*prompts user with current balance and asks for bet total reads bet with scanf*/
         printf("\nYou have %d quarters ($%.02f).\n", quarters, balance);
-        printf("Enter the number of quarters to bet (or 0 to cash out): ");
+        printf("Enter the number of quarters to bet (or 0 to cash out):");
         scanf("%d", &bet);
 
         /*exit case uses the number 0 as an early exit then tells user how much they made in dollars*/
@@ -87,12 +89,11 @@ int main ()
                 printf("You get your money back!\n");
             }
         }
-        else if (bet > quarters)
+        else if (bet > quarters || bet < 0)
         {
-            printf("Invalid bet. Please enter a valid number of quarters. \n");
+            printf("Invalid bet. Please enter a valid number of quarters.\n");
             continue;
         }
-        
         
     }
 
