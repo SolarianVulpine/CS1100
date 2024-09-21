@@ -33,7 +33,7 @@ int main()
         p = rand() % 2;
         q = rand() % 2;
 
-        printf("\nBinary dice roll: p = %d, q = %d", p, q);
+        printf("Binary dice roll: p = %d, q = %d\n", p, q);
 
         if(choice == 'r')
         {
@@ -44,18 +44,21 @@ int main()
         if (choice == 'b')
         {
             bitwise_result = p ^ q;
-            printf("You took the blue pill. Demonstrating LOGICAL XOR: %d ^ %d = %d", p, q, bitwise_result);
+            printf("You took the blue pill. Demonstrating LOGICAL XOR: %d ^ %d = %d\n", p, q, bitwise_result);
         }
 
         if (choice == 'w')
         {
             bitwise_result = p || q;
-            printf("You took the white pill. Demonstrating LOGICAL OR: %d || %d = %d");
+            printf("You took the white pill. Demonstrating LOGICAL OR: %d || %d = %d\n", p, q, bitwise_result);
         }
         if (choice == 'k')
         {
-            bitwise_result = p ~ q;
+            printf("You took the black pill. Demonstrating LOGICAL NOT: !%d = %d and !%d = %d\n", p, !p, q, !q);
         }
+
+        
+        break;
     }
 
 
