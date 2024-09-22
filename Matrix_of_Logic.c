@@ -24,42 +24,61 @@ int main()
 
     printf("Welcome to the Matrix of Logic!\n");
 
-    while(choice != 'q' || choice != 'Q')
+    // while(choice != 'q' || choice != 'Q')
+    while(x == 1)
     {
         printf("You have a choice to make:\n");
         printf("Take the red pill (r), blue pill (b), white pill (w), or black (k): ");
-        scanf("%c", &choice);
+        scanf(" %c", &choice);
 
         p = rand() % 2;
         q = rand() % 2;
 
-        printf("Binary dice roll: p = %d, q = %d\n", p, q);
+        // printf("Binary dice roll: p = %d, q = %d\n", p, q);
 
-        if(choice == 'r')
+        // if(choice == 'r')
+        switch (choice)
         {
-            bitwise_result = p && q;
-            printf("You took the red pill. Demonstrating LOGICAL AND: %d && %d = %d\n", p, q, bitwise_result);
+            case 'r':
+                bitwise_result = p && q;
+                printf("Binary dice roll: p = %d, q = %d\n", p, q);
+                printf("You took the red pill. Demonstrating LOGICAL AND: %d && %d = %d\n\n", p, q, bitwise_result);
+                break;
+            case 'b':
+                bitwise_result = p ^ q;
+                printf("Binary dice roll: p = %d, q = %d\n", p, q);
+                printf("You took the blue pill. Demonstrating LOGICAL XOR: %d ^ %d = %d\n\n", p, q, bitwise_result);
+                break;
+            case 'w':
+                bitwise_result = p || q;
+                printf("Binary dice roll: p = %d, q = %d\n", p, q);
+                printf("You took the white pill. Demonstrating LOGICAL OR: %d || %d = %d\n\n", p, q, bitwise_result);
+                break;
+            case 'k':
+                printf("Binary dice roll: p = %d, q = %d\n", p, q);
+                printf("You took the black pill. Demonstrating LOGICAL NOT: !%d = %d and !%d = %d\n\n", p, !p, q, !q);
+                break;
+            default:
+                // printf("Invalid choice\n\n");
+                break;
         }
-
-        if (choice == 'b')
+            
+        if (choice == 'q' || choice == 'Q')
         {
-            bitwise_result = p ^ q;
-            printf("You took the blue pill. Demonstrating LOGICAL XOR: %d ^ %d = %d\n", p, q, bitwise_result);
+            printf("Quitting! Are you sure? (y/n): ");
+            scanf(" %c", &choice); // Added space before %c
+            if (choice == 'y' || choice == 'Y')
+            {
+                printf("Quitting!\n");
+                x = 0;  // Set x to 0 to exit the loop
+            }
+            else if (choice == 'n' || choice == 'N')
+            {
+                // continue;
+            }
         }
-
-        if (choice == 'w')
-        {
-            bitwise_result = p || q;
-            printf("You took the white pill. Demonstrating LOGICAL OR: %d || %d = %d\n", p, q, bitwise_result);
-        }
-        if (choice == 'k')
-        {
-            printf("You took the black pill. Demonstrating LOGICAL NOT: !%d = %d and !%d = %d\n", p, !p, q, !q);
-        }
-
-        
-        break;
     }
-
+        // break;
+    return (0);
 
 }
