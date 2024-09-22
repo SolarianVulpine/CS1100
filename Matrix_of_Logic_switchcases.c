@@ -2,21 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-/**
- * main - entry point of the program
- * 
- * Description - Present user with a choice of taking one of four pills; Red, Blue, White, & Black.
- * program generates random binary values for two variables (p and q) and demonstrates the corresponding
- * logical operation beased on the user's choice
- * 
- * Return: zero? on success
- */
-
 int main()
 {
     srand(time(NULL));
 
-    char choice;
     int x = 1;
     int p;
     int q;
@@ -24,19 +13,31 @@ int main()
 
     printf("Welcome to the Matrix of Logic!\n");
 
-    // while(choice != 'q' || choice != 'Q')
     while(x == 1)
     {
+        char choice;
+
         printf("You have a choice to make:\n");
-        printf("Take the red pill (r), blue pill (b), white pill (w), or black (k): ");
+        printf("Take the red pill (r), blue pill (b), white pill (w), or black pill (k):");
         scanf(" %c", &choice);
 
         p = rand() % 2;
         q = rand() % 2;
 
-        // printf("Binary dice roll: p = %d, q = %d\n", p, q);
+        if (choice == 'q' || choice == 'Q')
+        {
+            printf("Quitting! Are you sure? (y/n): ");
+            scanf(" %c", &choice);
+            if (choice == 'y' || choice == 'Y')
+            {
+                printf("Quitting!\n");
+                x = 0;
+            }
+            else
+            {
+            }
+        }
 
-        // if(choice == 'r')
         switch (choice)
         {
             case 'r':
@@ -59,26 +60,9 @@ int main()
                 printf("You took the black pill. Demonstrating LOGICAL NOT: !%d = %d and !%d = %d\n\n", p, !p, q, !q);
                 break;
             default:
-                // printf("Invalid choice\n\n");
                 break;
-        }
-            
-        if (choice == 'q' || choice == 'Q')
-        {
-            printf("Quitting! Are you sure? (y/n): ");
-            scanf(" %c", &choice); // Added space before %c
-            if (choice == 'y' || choice == 'Y')
-            {
-                printf("Quitting!\n");
-                x = 0;  // Set x to 0 to exit the loop
-            }
-            else if (choice == 'n' || choice == 'N')
-            {
-                // continue;
-            }
-        }
+        } 
+        
     }
-        // break;
     return (0);
-
 }
