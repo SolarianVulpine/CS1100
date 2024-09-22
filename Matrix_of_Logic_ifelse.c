@@ -35,29 +35,40 @@ int main()
             }
             else
             {
+                printf("Invalid choice.\n");
+                continue;
             }
         }
 
-        printf("Binary dice roll: p = %d, q = %d\n", p, q);
+        // printf("Binary dice roll: p = %d, q = %d\n", p, q);
 
         if (choice == 'r')
-        {    
+        {
+            printf("Binary dice roll: p = %d, q = %d\n", p, q);    
             bitwise_result = p && q;
             printf("You took the red pill. Demonstrating LOGICAL AND: %d && %d = %d\n\n", p, q, bitwise_result);
         }
         else if (choice == 'b')
         {
+            printf("Binary dice roll: p = %d, q = %d\n", p, q);
             bitwise_result = p ^ q;
             printf("You took the blue pill. Demonstrating LOGICAL XOR: %d ^ %d = %d\n\n", p, q, bitwise_result);
         }
         else if (choice == 'w')
         {
+            printf("Binary dice roll: p = %d, q = %d\n", p, q);
             bitwise_result = p || q;
             printf("You took the white pill. Demonstrating LOGICAL OR: %d || %d = %d\n\n", p, q, bitwise_result);
         }
         else if (choice == 'k')
         {
+            printf("Binary dice roll: p = %d, q = %d\n", p, q);
             printf("You took the black pill. Demonstrating LOGICAL NOT: !%d = %d and !%d = %d\n\n", p, !p, q, !q);
+        }
+        else 
+        {
+            printf("Invalid choice.\n");
+            continue;
         }
     } 
 
