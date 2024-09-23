@@ -65,14 +65,14 @@ int main(void) {
             {
                 printf("Enter the quantity of %ss needed: ", item_Input);
                 scanf("%d", &quantity);
-                shirtQuantity += quantity;
+                shirtQuantity = quantity;
                 printf("Clothing item '%s' successfully added to your cart.\n", item_Input);
             }
             else if (strcasecmp(item_Input, "shoes") == 0) 
             {
                 printf("Enter the quantity of %s needed: ", item_Input);
                 scanf("%d", &quantity);
-                shoeQuantity += quantity;
+                shoeQuantity = quantity;
                 printf("Clothing item '%s' successfully added to your cart.\n", item_Input);
             }
             else
@@ -85,7 +85,7 @@ int main(void) {
             {
                 printf("Enter the quantity of %s needed: ", item_Input);
                 scanf("%d", &quantity);
-                pantsQuantity += quantity;
+                pantsQuantity = quantity;
                 printf("Clothing item '%s' successfully added to your cart.\n", item_Input);
             }
             else
