@@ -44,13 +44,13 @@ int main(void) {
         // Read user input for clothing type
         scanf("%s", item_Input);
 
-        for(int i = 0; item_Input[i]; i++)
-        {
-            item_Input[i] = tolower(item_Input[i]);
-        }
+        // for(int i = 0; item_Input[i]; i++)
+        // {
+        //     item_Input[i] = tolower(item_Input[i]);
+        // }
 
         // Check user input and prompt for quantity based on clothing type
-        if (strcmp(item_Input, "exit") == 0) 
+        if (strcasecmp(item_Input, "exit") == 0) 
         {
             break;
         }
@@ -61,14 +61,14 @@ int main(void) {
         switch (item_Input[0])
         {
         case 's':
-            if (strcmp(item_Input, "shirt") == 0)
+            if (strcasecmp(item_Input, "shirt") == 0)
             {
                 printf("Enter the quantity of %ss needed: ", item_Input);
                 scanf("%d", &quantity);
                 shirtQuantity += quantity;
                 printf("Clothing item '%s' successfully added to your cart.\n", item_Input);
             }
-            else if (strcmp(item_Input, "shoes") == 0) 
+            else if (strcasecmp(item_Input, "shoes") == 0) 
             {
                 printf("Enter the quantity of %s needed: ", item_Input);
                 scanf("%d", &quantity);
@@ -81,7 +81,7 @@ int main(void) {
             }
             break;
         case 'p':
-            if (strcmp(item_Input, "pants") == 0) 
+            if (strcasecmp(item_Input, "pants") == 0) 
             {
                 printf("Enter the quantity of %s needed: ", item_Input);
                 scanf("%d", &quantity);
@@ -104,13 +104,13 @@ int main(void) {
     //Shipping selection
     printf("\nEnter the shipping destination (USA, Mexico, Canada):");
     scanf("%s", country_Input);
-    for(int i = 0; country_Input[i]; i++) country_Input[i] = tolower(country_Input[i]);  // Convert to lowercase
+    // for(int i = 0; country_Input[i]; i++) country_Input[i] = tolower(country_Input[i]);  // Convert to lowercase
 
     //Determine tax rate based on country
     switch (country_Input[0])
     {
         case 'u':
-            if (strcmp(country_Input, "usa") == 0)
+            if (strcasecmp(country_Input, "usa") == 0)
             {
                 taxrate = USA_tax;
             }
@@ -121,7 +121,7 @@ int main(void) {
             }
             break;
         case 'm':
-            if (strcmp(country_Input, "mexico") == 0)
+            if (strcasecmp(country_Input, "mexico") == 0)
             {
                 taxrate = MEX_tax;
             }
@@ -132,7 +132,7 @@ int main(void) {
             }
             break;
         case 'c':
-            if (strcmp(country_Input, "canada") == 0)
+            if (strcasecmp(country_Input, "canada") == 0)
             {
                 taxrate = CAN_tax;
             }
@@ -156,31 +156,31 @@ int main(void) {
     switch (country_Input[0])
     {
         case 'u':
-            if (strcmp(shipping_Input, "standard") == 0)
+            if (strcasecmp(shipping_Input, "standard") == 0)
             {
                 shippingcost = USA_standard;
             }
-            else if (strcmp(shipping_Input, "expedited") == 0)
+            else if (strcasecmp(shipping_Input, "expedited") == 0)
             {
                 shippingcost = USA_expedited;
             }
             break;
         case 'm':
-            if (strcmp(shipping_Input, "standard") == 0)
+            if (strcasecmp(shipping_Input, "standard") == 0)
             {
                 shippingcost = MEX_expedited;
             }
-            else if (strcmp(shipping_Input, "expedited") == 0)
+            else if (strcasecmp(shipping_Input, "expedited") == 0)
             {
                 shippingcost = MEX_expedited;
             }
             break;
         case 'c':
-            if (strcmp(shipping_Input, "standard") == 0)
+            if (strcasecmp(shipping_Input, "standard") == 0)
             {
                 shippingcost = CAN_expedited;
             }
-            else if (strcmp(shipping_Input, "expedited") == 0)
+            else if (strcasecmp(shipping_Input, "expedited") == 0)
             {
                 shippingcost = CAN_expedited;
             }
