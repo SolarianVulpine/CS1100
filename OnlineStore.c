@@ -40,7 +40,7 @@ int main(void) {
     do {
         // Display menu options to the user
         printf("Enter the type of clothing needed (shirt, shoes, pants).\n");
-        printf("Type 'exit' to quit and calculate the total cost.\n");
+        printf("Type 'exit' to quit and proceed to shipping details.\n");
         // Read user input for clothing type
         scanf("%s", item_Input);
 
