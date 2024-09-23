@@ -106,7 +106,7 @@ int main(void) {
     scanf("%s", country_Input);
     for(int i = 0; country_Input[i]; i++) country_Input[i] = tolower(country_Input[i]);  // Convert to lowercase
 
-    /*Determine tax rate based on country*/
+    //Determine tax rate based on country
     switch (country_Input[0])
     {
         case 'u':
@@ -148,7 +148,7 @@ int main(void) {
     }
 
     //Shipping method selection
-    printf(" Enter the shipping method (standard, expedited):\n");
+    printf("Enter the shipping method (standard, expedited):\n");
     scanf("%s", shipping_Input);
     for(int i = 0; shipping_Input[i]; i++) shipping_Input[i] = tolower(shipping_Input[i]);
 
