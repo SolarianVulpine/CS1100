@@ -8,6 +8,7 @@
 // Include necessary header files
 #include <stdio.h>   // Provides input/output functions
 #include <string.h>  // Provides string manipulation functions
+#include <ctype.h>
 
 // Define constants for clothing item prices using macros
 #define SHIRT_PRICE 19.99
