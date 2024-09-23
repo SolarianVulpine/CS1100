@@ -105,6 +105,9 @@ int main(void) {
     printf("\nEnter the shipping destination (USA, Mexico, Canada):");
     scanf("%s", country_Input);
     // for(int i = 0; country_Input[i]; i++) country_Input[i] = tolower(country_Input[i]);  // Convert to lowercase
+    printf("Enter the shipping method (standard, expedited):\n");
+    scanf("%s", shipping_Input);
+
 
     while (shipping_Input[0] == 0)
     {    
@@ -113,16 +116,15 @@ int main(void) {
             case 'u':
                 if (strcasecmp(country_Input, "usa") == 0)
                 {
-                    taxrate = USA_tax;
-                    printf("Enter the shipping method (standard, expedited):\n");
-                    scanf("%s", shipping_Input);
                     if (strcasecmp(shipping_Input, "standard") == 0)
                     {
                         shippingcost = USA_standard;
+                        taxrate = USA_tax;
                     }
                     else if (strcasecmp(shipping_Input, "expedited") == 0)
                     {
                         shippingcost = USA_expedited;
+                        taxrate = USA_tax;
                     }
                 }
                 else
@@ -134,16 +136,15 @@ int main(void) {
             case 'm':
                 if (strcasecmp(country_Input, "mexico") == 0)
                 {
-                    taxrate = MEX_tax;
-                    printf("Enter the shipping method (standard, expedited):\n");
-                    scanf("%s", shipping_Input);
                     if (strcasecmp(shipping_Input, "standard") == 0)
                     {
                         shippingcost = MEX_expedited;
+                        taxrate = MEX_tax;
                     }
                     else if (strcasecmp(shipping_Input, "expedited") == 0)
                     {
                         shippingcost = MEX_expedited;
+                        taxrate = MEX_tax;
                     }
                 }
                 else
@@ -155,16 +156,15 @@ int main(void) {
             case 'c':
                 if (strcasecmp(country_Input, "canada") == 0)
                 {
-                    taxrate = CAN_tax;
-                    printf("Enter the shipping method (standard, expedited):\n");
-                    scanf("%s", shipping_Input);
                     if (strcasecmp(shipping_Input, "standard") == 0)
                     {
                         shippingcost = CAN_expedited;
+                        taxrate = CAN_tax;
                     }
                     else if (strcasecmp(shipping_Input, "expedited") == 0)
                     {
                         shippingcost = CAN_expedited;
+                        taxrate = CAN_tax;
                     }
                 }
                 else
@@ -184,42 +184,42 @@ int main(void) {
         // for(int i = 0; shipping_Input[i]; i++) shipping_Input[i] = tolower(shipping_Input[i]);
 
         //Calculate shipping cost based on country and shipping method
-        // switch (country_Input[0])
-        // {
-        //     case 'u':
-        //         if (strcasecmp(shipping_Input, "standard") == 0)
-        //         {
-        //             shippingcost = USA_standard;
-        //         }
-        //         else if (strcasecmp(shipping_Input, "expedited") == 0)
-        //         {
-        //             shippingcost = USA_expedited;
-        //         }
-        //         break;
-        //     case 'm':
-        //         if (strcasecmp(shipping_Input, "standard") == 0)
-        //         {
-        //             shippingcost = MEX_expedited;
-        //         }
-        //         else if (strcasecmp(shipping_Input, "expedited") == 0)
-        //         {
-        //             shippingcost = MEX_expedited;
-        //         }
-        //         break;
-        //     case 'c':
-        //         if (strcasecmp(shipping_Input, "standard") == 0)
-        //         {
-        //             shippingcost = CAN_expedited;
-        //         }
-        //         else if (strcasecmp(shipping_Input, "expedited") == 0)
-        //         {
-        //             shippingcost = CAN_expedited;
-        //         }
-        //         break;
-        //     default:
-        //         printf("Invalid shipping method. Defaulting to standard.\n");
-        //         shippingcost = USA_standard;
-        // }
+        switch (country_Input[0])
+        {
+            case 'u':
+                if (strcasecmp(shipping_Input, "standard") == 0)
+                {
+                    shippingcost = USA_standard;
+                }
+                else if (strcasecmp(shipping_Input, "expedited") == 0)
+                {
+                    shippingcost = USA_expedited;
+                }
+                break;
+            case 'm':
+                if (strcasecmp(shipping_Input, "standard") == 0)
+                {
+                    shippingcost = MEX_expedited;
+                }
+                else if (strcasecmp(shipping_Input, "expedited") == 0)
+                {
+                    shippingcost = MEX_expedited;
+                }
+                break;
+            case 'c':
+                if (strcasecmp(shipping_Input, "standard") == 0)
+                {
+                    shippingcost = CAN_expedited;
+                }
+                else if (strcasecmp(shipping_Input, "expedited") == 0)
+                {
+                    shippingcost = CAN_expedited;
+                }
+                break;
+            default:
+                printf("Invalid shipping method. Defaulting to standard.\n");
+                shippingcost = USA_standard;
+        }
 
     }
     //Calculate tax amount
