@@ -102,14 +102,15 @@ int main(void) {
     totalcost = (shirtQuantity * SHIRT_PRICE) + (shoeQuantity * SHOE_PRICE) + (pantsQuantity * PANTS_PRICE);
 
     //Shipping selection
-    printf("\nEnter the shipping destination (USA, Mexico, Canada):");
+    printf("\nEnter the shipping destination (USA, Mexico, Canada): ");
     scanf("%s", country_Input);
     // for(int i = 0; country_Input[i]; i++) country_Input[i] = tolower(country_Input[i]);  // Convert to lowercase
-    printf("Enter the shipping method (standard, expedited):\n");
+    printf("Enter the shipping method (standard, expedited): ");
     scanf("%s", shipping_Input);
 
 
-    while (shipping_Input[0] == 0)
+    // while (shipping_Input[0] == 0)
+    do
     {    
         switch (country_Input[0])//Determine tax rate based on country
         {
@@ -130,6 +131,7 @@ int main(void) {
                 else
                 {
                     printf("Invalid shipping destination. Defaulting to USA standard shipping.\n");
+                    shippingcost = USA_standard;
                     taxrate = USA_tax;
                 }
                 break;
@@ -150,6 +152,7 @@ int main(void) {
                 else
                 {
                     printf("Invalid shipping destination. Defaulting to USA standard shipping.\n");
+                    shippingcost = USA_standard;
                     taxrate = USA_tax;
                 }
                 break;
@@ -170,6 +173,7 @@ int main(void) {
                 else
                 {
                     printf("Invalid shipping destination. Defaulting to USA standard shipping.\n");
+                    shippingcost = USA_standard;
                     taxrate = USA_tax;
                 }
                 break;
@@ -177,7 +181,7 @@ int main(void) {
                 printf("Invalid shipping destination. Defaulting to USA standard shipping.\n");
                 shippingcost = USA_standard;
                 taxrate = USA_tax;
-        }
+        } 
 
         //Shipping method selection
         // printf("Enter the shipping method (standard, expedited):\n");
@@ -222,7 +226,7 @@ int main(void) {
         //         shippingcost = USA_standard;
         // }
 
-    }
+    } while (1);
     //Calculate tax amount
     taxamount = totalcost * taxrate;
 
@@ -234,7 +238,7 @@ int main(void) {
     printf("Shoes\t\t%d\t\t$%.2f\t\t$%.2f\n", shoeQuantity, SHOE_PRICE, shoeQuantity * SHOE_PRICE);
     printf("Pants\t\t%d\t\t$%.2f\t\t$%.2f\n", pantsQuantity, PANTS_PRICE, pantsQuantity * PANTS_PRICE);
     printf("-------------------------------------------------------\n");
-    printf("Total Cost:\t\t\t\t\t$%.2f\n", totalcost);
+    printf("Subtotal:\t\t\t\t\t$%.2f\n", totalcost);
     printf("Shipping Cost:\t\t\t\t\t$%.2f\n", shippingcost);
     printf("Tax Amount:\t\t\t\t\t$%.2f\n", taxamount);
     printf("-------------------------------------------------------\n");
