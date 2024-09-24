@@ -175,6 +175,7 @@ int main(void) {
                 break;
             default:
                 printf("Invalid shipping destination. Defaulting to USA standard shipping.\n");
+                shippingcost = USA_standard;
                 taxrate = USA_tax;
         }
 
@@ -184,42 +185,42 @@ int main(void) {
         // for(int i = 0; shipping_Input[i]; i++) shipping_Input[i] = tolower(shipping_Input[i]);
 
         //Calculate shipping cost based on country and shipping method
-        switch (country_Input[0])
-        {
-            case 'u':
-                if (strcasecmp(shipping_Input, "standard") == 0)
-                {
-                    shippingcost = USA_standard;
-                }
-                else if (strcasecmp(shipping_Input, "expedited") == 0)
-                {
-                    shippingcost = USA_expedited;
-                }
-                break;
-            case 'm':
-                if (strcasecmp(shipping_Input, "standard") == 0)
-                {
-                    shippingcost = MEX_expedited;
-                }
-                else if (strcasecmp(shipping_Input, "expedited") == 0)
-                {
-                    shippingcost = MEX_expedited;
-                }
-                break;
-            case 'c':
-                if (strcasecmp(shipping_Input, "standard") == 0)
-                {
-                    shippingcost = CAN_expedited;
-                }
-                else if (strcasecmp(shipping_Input, "expedited") == 0)
-                {
-                    shippingcost = CAN_expedited;
-                }
-                break;
-            default:
-                printf("Invalid shipping method. Defaulting to standard.\n");
-                shippingcost = USA_standard;
-        }
+        // switch (country_Input[0])
+        // {
+        //     case 'u':
+        //         if (strcasecmp(shipping_Input, "standard") == 0)
+        //         {
+        //             shippingcost = USA_standard;
+        //         }
+        //         else if (strcasecmp(shipping_Input, "expedited") == 0)
+        //         {
+        //             shippingcost = USA_expedited;
+        //         }
+        //         break;
+        //     case 'm':
+        //         if (strcasecmp(shipping_Input, "standard") == 0)
+        //         {
+        //             shippingcost = MEX_expedited;
+        //         }
+        //         else if (strcasecmp(shipping_Input, "expedited") == 0)
+        //         {
+        //             shippingcost = MEX_expedited;
+        //         }
+        //         break;
+        //     case 'c':
+        //         if (strcasecmp(shipping_Input, "standard") == 0)
+        //         {
+        //             shippingcost = CAN_expedited;
+        //         }
+        //         else if (strcasecmp(shipping_Input, "expedited") == 0)
+        //         {
+        //             shippingcost = CAN_expedited;
+        //         }
+        //         break;
+        //     default:
+        //         printf("Invalid shipping method. Defaulting to standard.\n");
+        //         shippingcost = USA_standard;
+        // }
 
     }
     //Calculate tax amount
