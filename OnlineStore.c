@@ -105,29 +105,34 @@ int main(void) {
     printf("\nEnter the shipping destination (USA, Mexico, Canada): ");
     scanf("%s", country_Input);
     // for(int i = 0; country_Input[i]; i++) country_Input[i] = tolower(country_Input[i]);  // Convert to lowercase
-    printf("Enter the shipping method (standard, expedited): ");
-    scanf("%s", shipping_Input);
+    // printf("Enter the shipping method (standard, expedited): ");
+    // scanf("%s", shipping_Input);
 
+    printf("%s", shipping_Input);
 
-    // while (shipping_Input[0] == 0)
-    do
+    while (shipping_Input[0] == 0)
+    // do
     {    
+        break;
+        printf("%s", country_Input);
         switch (country_Input[0])//Determine tax rate based on country
         {
             case 'u':
-                if (strcasecmp(country_Input, "usa") == 0)
-                {
+            printf("this is U case");
+                // if (strcasecmp(country_Input, "usa") == 0)
+                // {
                     if (strcasecmp(shipping_Input, "standard") == 0)
                     {
                         shippingcost = USA_standard;
                         taxrate = USA_tax;
+                        printf("made it!");
                     }
                     else if (strcasecmp(shipping_Input, "expedited") == 0)
                     {
                         shippingcost = USA_expedited;
                         taxrate = USA_tax;
                     }
-                }
+                // }
                 else
                 {
                     printf("Invalid shipping destination. Defaulting to USA standard shipping.\n");
@@ -136,8 +141,11 @@ int main(void) {
                 }
                 break;
             case 'm':
+            printf("this is M case");
                 if (strcasecmp(country_Input, "mexico") == 0)
                 {
+                    printf("Enter the shipping method (standard, expedited): ");
+                    scanf("%s", shipping_Input);
                     if (strcasecmp(shipping_Input, "standard") == 0)
                     {
                         shippingcost = MEX_expedited;
@@ -157,6 +165,7 @@ int main(void) {
                 }
                 break;
             case 'c':
+            printf("this is C case");
                 if (strcasecmp(country_Input, "canada") == 0)
                 {
                     if (strcasecmp(shipping_Input, "standard") == 0)
@@ -226,9 +235,12 @@ int main(void) {
         //         shippingcost = USA_standard;
         // }
 
-    } while (1);
+    } 
+    
+    // printf("while loops");
     //Calculate tax amount
     taxamount = totalcost * taxrate;
+    printf("the tax amount is %f", taxamount);
 
 
     //Display the formatted bill
