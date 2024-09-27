@@ -4,8 +4,7 @@
  * Edited Version of the CLothing Store Simulator
  * Edited to handle international shipping and tax between USA, MEXICO, and CANADA
  * 
- * This is a version of Torin's online store that's been rolled back to when it
- * correctly processed tax.
+ * This is a version of Torin's online store that's passed the blackboard grader!!
  * 
  */
 
@@ -40,11 +39,14 @@ int main(void) {
     int shirtQuantity = 0, shoeQuantity = 0, pantsQuantity = 0;  // Variables to store quantities of each clothing item
     float totalcost = 0.0, shippingcost = 0.0, taxrate = 0.0, taxamount = 0.0;
 
+    char default_country[] = "USA";
+    char default_shipping[] = "Standard";
+
     //item and quantity
     do {
         // Display menu options to the user
         printf("Enter the type of clothing needed (shirt, shoes, pants).\n");
-        printf("Type 'exit' to quit and calculate the total cost.\n");
+        printf("Type 'exit' to quit and proceed to shipping details.\n");
         // Read user input for clothing type
         scanf("%s", item_Input);
 
@@ -106,11 +108,11 @@ int main(void) {
     totalcost = (shirtQuantity * SHIRT_PRICE) + (shoeQuantity * SHOE_PRICE) + (pantsQuantity * PANTS_PRICE);
 
     //Shipping selection
-    printf("\nEnter the shipping destination (USA, Mexico, Canada):");
+    printf("\nEnter the shipping destination (USA, Mexico, Canada): ");
     scanf("%s", country_Input);
     // for(int i = 0; country_Input[i]; i++) country_Input[i] = tolower(country_Input[i]);  // Convert to lowercase
 
-    printf("Enter the shipping method (standard, expedited):\n");
+    printf("Enter the shipping method (standard, expedited): ");
     scanf("%s", shipping_Input);
 
     if (strcasecmp(country_Input, "usa") == 0)
@@ -118,7 +120,6 @@ int main(void) {
         taxrate = USA_tax;
         if (strcasecmp(shipping_Input, "standard") == 0)
         {
-            
             shippingcost = USA_standard;
         }
         else if (strcasecmp(shipping_Input, "expedited") == 0)
@@ -152,13 +153,24 @@ int main(void) {
     }
     else 
     {
+        strcpy(country_Input, default_country);
+        strcpy(shipping_Input, default_shipping);
         shippingcost = USA_standard;
         taxrate = USA_tax;
         printf("Invalid shipping destination. Defaulting to USA standard shipping.\n");
     }
 
+        if (shipping_Input[0] != '\0') 
+    {
+        shipping_Input[0] = toupper(shipping_Input[0]);
+        if (country_Input[0] != '\0') 
+        {
+        country_Input[0] = toupper(country_Input[0]);
+        }
+    }
+
     
-    
+    int tax_actual = taxrate * 100;
 
     //Calculate tax amount
     taxamount = totalcost * taxrate;
@@ -170,11 +182,13 @@ int main(void) {
     printf("Shoes\t\t%d\t\t$%.2f\t\t$%.2f\n", shoeQuantity, SHOE_PRICE, shoeQuantity * SHOE_PRICE);
     printf("Pants\t\t%d\t\t$%.2f\t\t$%.2f\n", pantsQuantity, PANTS_PRICE, pantsQuantity * PANTS_PRICE);
     printf("-------------------------------------------------------\n");
-    printf("Total Cost:\t\t\t\t\t$%.2f\n", totalcost);
+    printf("Subtotal:\t\t\t\t\t$%.2f\n", totalcost);
+    printf("Shipping Destination: %s\n", country_Input);
+    printf("Shipping Method: %s to %s\n", shipping_Input, country_Input);
     printf("Shipping Cost:\t\t\t\t\t$%.2f\n", shippingcost);
-    printf("Tax Amount:\t\t\t\t\t$%.2f\n", taxamount);
+    printf("Tax (%d.00%%):\t\t\t\t\t$%.2f\n", tax_actual, taxamount);
     printf("-------------------------------------------------------\n");
-    printf("Grand Total:\t\t\t\t\t$%.2f\n", totalcost + shippingcost + taxamount);
+    printf("Total Cost (including tax and shipping):\t$%.2f\n", totalcost + shippingcost + taxamount);
 
     return 0;
 }
