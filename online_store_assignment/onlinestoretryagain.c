@@ -12,6 +12,7 @@
 #include <stdio.h>   // Provides input/output functions
 #include <string.h>  // Provides string manipulation functions
 #include <ctype.h>
+#include "custom_functions.h"
 
 // Define constants for clothing item prices using macros
 #define SHIRT_PRICE 19.99
@@ -30,6 +31,8 @@
 #define USA_tax 0.08
 #define MEX_tax 0.16
 #define CAN_tax 0.12
+
+char* _capitalize(char* str);
 
 int main(void) {
     // Declare variables
@@ -162,10 +165,12 @@ int main(void) {
 
         if (shipping_Input[0] != '\0') 
     {
-        shipping_Input[0] = toupper(shipping_Input[0]);
+        // shipping_Input[0] = toupper(shipping_Input[0]);
+        _capitalize(shipping_Input[]);
         if (country_Input[0] != '\0') 
         {
-        country_Input[0] = toupper(country_Input[0]);
+        // country_Input[0] = toupper(country_Input[0]);
+        _capitalize(country_Input[]);
         }
     }
 
@@ -191,4 +196,19 @@ int main(void) {
     printf("Total Cost (including tax and shipping):\t$%.2f\n", totalcost + shippingcost + taxamount);
 
     return 0;
+}
+
+char* _capitalize(char* str)
+{
+
+    if (str == NULL || *str == '\0') {
+        return str; // Return original string if it's NULL or empty
+    }
+
+    // Capitalize the first character
+    *str = toupper(*str);
+
+    return (str); // Return the modified string
+
+
 }

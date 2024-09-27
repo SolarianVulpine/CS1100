@@ -2,28 +2,24 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "custom_functions.h"
 
 /**
- * main - entry point of the program
+ * _capitalize - entry point of the program
  * 
  * meant to capitalize the first letter in an array
  */
 
-int main ()
+char* _capitalize(char* str)
 {
-    char str[20];
-    int i;
-    int string_length;
-
-    printf("Enter a word in lowercase to capitalize the first letter: ");
-    scanf("%s", str);
-
-    if (str[0] != '\0') 
+    if (str == NULL || *str == '\0') 
     {
-      str[0] = toupper(str[0]);
+        return str; // Return original string if it's NULL or empty
     }
 
-    printf("Capitalized word: %s\n", str);
+    // Capitalize the first character
+    *str = toupper(*str);
 
-    return(0);
+    return (str); // Return the modified string
+
 }
