@@ -7,6 +7,9 @@
 #define MAX_EMAIL_ADDRESS_LENGTH 50
 
 char contacts[MAX_CONTACTS][MAX_CONTACT_NAME_LENGTH + MAX_PHONE_NUMBER_LENGTH + MAX_EMAIL_ADDRESS_LENGTH + 3];
+char names[MAX_CONTACTS][MAX_CONTACT_NAME_LENGTH];
+char phones[MAX_CONTACTS][MAX_PHONE_NUMBER_LENGTH];
+char emails[MAX_CONTACTS][MAX_EMAIL_ADDRESS_LENGTH];
 
 void contacts_list(int contactCount);
 void contacts_selection(int contactCount);
@@ -17,7 +20,7 @@ int main(void)
     int choice;
     int contactCount = 0;
     char line[256];
-    int i = 0;
+    // int i = 0;
 
 
     FILE *filePtr;
@@ -28,12 +31,22 @@ int main(void)
     return 1;
     }
 
+    // while (fgets(contacts[contactCount], sizeof(contacts[contactCount]), filePtr) != NULL && contactCount < MAX_CONTACTS)
+    // {
+    // contacts[contactCount][strcspn(contacts[contactCount], "\n")] = '\0';
+    // contactCount++;
+    // }
+
+    // while (fgets(line, sizeof(line), filePtr) != NULL && contactCount < MAX_CONTACTS)
     while (fgets(contacts[contactCount], sizeof(contacts[contactCount]), filePtr) != NULL && contactCount < MAX_CONTACTS)
     {
-    contacts[contactCount][strcspn(contacts[contactCount], "\n")] = '\0';
-    contactCount++;
+        line[strcspn(line, "\n")] = '\0'; // Remove newline character
+        
+        sscanf(line, "%49[^,],%14[^,],%49[^\n]", 
+               names[contactCount], phones[contactCount], emails[contactCount]);
+        
+        contactCount++;
     }
-
 
     fclose(filePtr);
 
@@ -76,15 +89,15 @@ void contacts_list(int contactCount)
 
     for (int i = 0; i < contactCount; i++)
     {
-        printf("%d. Name: %.*s\n", i + 1, MAX_CONTACT_NAME_LENGTH, contacts[i]);
-        printf("   Phone: %.*s\n", MAX_PHONE_NUMBER_LENGTH, contacts[i] + MAX_CONTACT_NAME_LENGTH);
-        printf("   Email: %.*s\n\n", MAX_EMAIL_ADDRESS_LENGTH, contacts[i] + MAX_CONTACT_NAME_LENGTH + MAX_PHONE_NUMBER_LENGTH);   
+        printf("%d. Name: %.*s\n", i + 1, MAX_CONTACT_NAME_LENGTH, names[contactCount]);
+        printf("   Phone: %.*s\n", MAX_PHONE_NUMBER_LENGTH, phones[contactCount]);
+        printf("   Email: %.*s\n\n", MAX_EMAIL_ADDRESS_LENGTH, emails[contactCount]);   
     }
     printf("\n");
 
 }
 
-void contacts_selection(int contactCount)
+void contacts_selection(char contacts[MAX_CONTACTS],int contactCount)
 {
     int selection;
     printf("Enter the contact index: ");
