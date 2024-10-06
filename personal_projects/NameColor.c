@@ -113,7 +113,7 @@ int letterAverage(char* array)
 {
     // int size = sizeof(array);
     int i;
-    // int j;
+    int j;
     // int temp = 1;
     int total = 0;
     // int result;
@@ -121,20 +121,20 @@ int letterAverage(char* array)
 
     for(i = 0; array[i] != '\0'; i++)
     {
-        if (i == isalpha(array[i]))
+        if (isalpha(array[i]))
         {
             values[i] = toupper(array[i]);
             values[i] = values[i] - 64;
         }
-        else if (i != isalpha(array[i]))
+        else
         {
             values[i] = 0;
         }
         printf("%d\n", values[i]);
     }
 
-    // j = sizeof(array);
-    // values[j] = '\0';
+    j = sizeof(array) - 1;
+    values[j] = '\0';
 
     for(i = 0; values[i] != '\0'; i++)
     {
