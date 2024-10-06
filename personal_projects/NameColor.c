@@ -69,6 +69,7 @@ int main()
             if((first_len + middle_len + 1) == i)
             {
             middle[j] = nameInput[i];
+            printf("%c\n", middle[j]);
             j++;
             middle_len++;
             }
@@ -79,6 +80,7 @@ int main()
             else if((first_len + middle_len + 2 + k) == i)
             {
             last[k] = nameInput[i];
+            printf("%c\n", last[k]);
             k++;
             last_len++;
             }
@@ -86,6 +88,7 @@ int main()
         else
         {
             first[i] = nameInput[i];
+            printf("%c\n", first[i]);
             first_len++;
         }
         }
@@ -130,7 +133,7 @@ int letterAverage(char* array)
         {
             values[i] = 0;
         }
-        printf("%d\n", values[i]);
+        // printf("%d\n", values[i]);
     }
 
     j = sizeof(array) - 1;
