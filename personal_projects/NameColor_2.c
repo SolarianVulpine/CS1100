@@ -4,12 +4,18 @@
 #include <ctype.h>
 #include <string.h>
 
+int letter_calculator(char* str);
+
 int main()
 {
     char *nameFirst;
     char *nameMiddle;
     char *nameLast;
     int n;
+
+    int R_Value;
+    int G_Value;
+    int B_Value;
 
     //Introduction
     printf("Welcome to the Name Color Generator!\nWe will give you an RGB value based on the combined letters of your name.\n");
@@ -77,8 +83,68 @@ int main()
         return (1);
     }
 
+    //calculate RGB values for each string
+    R_Value = letter_calculator(nameFirst);
+    G_Value = letter_calculator(nameMiddle);
+    B_Value = letter_calculator(nameLast);
+
+    letter_calculator(nameFirst);
+    letter_calculator(nameMiddle);
+    letter_calculator(nameLast);
+
+    //print results to user
     printf("The name you entered was \"%s %s %s\"\n", nameFirst, nameMiddle, nameLast);
+    printf("Your RGB values are %d, %d, %d\nWhat a pretty color!\n", R_Value, G_Value, B_Value);
+    printf("Thank you for playing! Goodbye!\n");
 
 
     return (0);
+}
+
+int letter_calculator(char* str)
+{
+    int i;
+    int j;
+    int total = 0;
+    int values[sizeof(str)]; //creates an array to hold the numeric values of each letter
+
+    printf("%s\n", str);
+
+    for(i = 0; str[i] != '\0'; i++) //this loop converts letter characters into numeric value
+    {
+        if (isalpha(str[i])) //checks if character is a letter
+        {
+            values[i] = toupper(str[i]); //converts the letter to uppercase
+            values[i] = values[i] - 64; //subtracts 64 from the ascii value of the uppercase letters (setting the values as A = 1 ... Z = 26)
+        }
+        else
+        {
+            values[i] = 0; //if the character is not a letter it's value is set to zero nullifying it's affect on the total
+        }
+        printf("%d ", values[i]);
+
+    }
+    printf("\n");
+
+    j = sizeof(str); //sets the end of values string to null or '0'
+    values[j] = '\0';
+
+    for(i = 0; values[i] != '\0'; i++) //this loop adds up the total of all character values
+    {
+        total = total + values[i];
+        printf("%d ", total);
+    }
+    printf("\n");
+
+    total = total * 4; //multiplies the total by  4
+    printf("%d\n", total);
+
+    while(total > 255) // if the total at this point is greater than the max RGB Value 255 ↓
+    {
+        total = total - 256; // subract 256 until the total is within 255 range
+    }
+    printf("%d\n", total);
+
+    return (total); //total is now an RGB value based on the specific string of characters passed into the function.
+
 }
