@@ -4,142 +4,204 @@
 #include <ctype.h>
 #include <string.h>
 
-int letter_calculator(char* str);
+/**
+ * main - takes user input and prints results
+ *
+ * Description: This program is inspired by an
+ * activity by @jared__cross on Instagram
+ * in which he converts a person's name into a set of RGB values.
+ * The first name represents the Red value.
+ * The middle name represents the Green value.
+ * The last name represents the Blue value.
+ *
+ * Retuen: 0 on success, 1 if there is an allocation error
+ */
 
-int main()
+
+int letter_calculator(char *str);
+
+int main(void)
 {
-    char *nameFirst;
-    char *nameMiddle;
-    char *nameLast;
-    int n;
+	char *nameFirst;
 
-    int R_Value;
-    int G_Value;
-    int B_Value;
+	char *nameMiddle;
 
-    //Introduction
-    printf("\nWelcome to the Name Color Generator!\nWe will give you an RGB value based on the combined letters of your name.\n\n");
+	char *nameLast;
 
-    //begin process for First name input
-    nameFirst = (char*) malloc(100 * sizeof(char)); //allocate memory for first name
+	int n;
 
-    if (nameFirst == NULL)
-    {
-        printf("Memory not allocated for first Name.\n"); //check if memory was allocated correctly
-        return (1);
-    }
+	int R_Value;
 
-    printf("Please enter your first name (this will be your R value): "); //take First name from user
-    scanf("%s", nameFirst);
+	int G_Value;
 
-    n = strlen(nameFirst);
-    nameFirst = (char*) realloc(nameFirst, (n + 1) * sizeof(char)); //reallocate memory based on the length of input
+	int B_Value;
 
-    if (nameFirst == NULL)
-    {
-        printf("Memory not allocated for first Name.\n"); //check again if memory was allocated correctly
-        return (1);
-    }
+	/*Introduction*/
+	printf("\nWelcome to the Name Color Generator!\n");
+	printf("We will give you an RGB value based on the");
+	printf(" combined letters of your name.\n\n");
 
-    //begin process for middle name input
-    nameMiddle = (char*) malloc(100 * sizeof(char)); //allocate memory for middle name
+	/*begin process for First name input*/
+	nameFirst = (char *) malloc(100 * sizeof(char));
+	/*allocate memory for first name*/
 
-    if (nameMiddle == NULL)
-    {
-        printf("Memory not allocated for middle Name.\n"); //check for correct allocation
-        return (1);
-    }
+	/*check if memory was allocated correctly*/
+	if (nameFirst == NULL)
+	{
+		printf("Memory not allocated for first Name.\n");
+		return (1);
+	}
 
-    printf("Please enter your middle name (this will be your G value): ");
-    scanf("%s", nameMiddle);
+	/*take First name from user*/
+	printf("Please enter your first name (this will be your R value): ");
+	scanf("%s", nameFirst);
 
-    n = strlen(nameMiddle);
-    nameMiddle = (char*) realloc(nameMiddle, (n + 1) * sizeof(char)); //reallocate memory based on length of input
+	/*reallocate memory based on the length of input*/
+	n = strlen(nameFirst);
+	nameFirst = (char *) realloc(nameFirst, (n + 1) * sizeof(char));
 
-    if (nameMiddle == NULL)
-    {
-        printf("Memory not allocated for middle Name.\n"); //check for allocation success again
-        return (1);
-    }
+	/*check again if memory was allocated correctly*/
+	if (nameFirst == NULL)
+	{
+		printf("Memory not allocated for first Name.\n");
+		return (1);
+	}
 
-    //begin process for last name input
-    nameLast = (char*) malloc(100 * sizeof(char)); //allocate memory for last name input
+	/*begin process for middle name input*/
+	nameMiddle = (char *) malloc(100 * sizeof(char));
 
-    if (nameLast == NULL)
-    {
-        printf("Memory not allocated for last Name.\n"); //check for allocation success
-        return (1);
-    }
+	if (nameMiddle == NULL)
+	{
+		printf("Memory not allocated for middle Name.\n");
+		return (1);
+	}
 
-    printf("Please enter your last name (this will be your B value): ");
-    scanf("%s", nameLast);
+	printf("Please enter your middle name (this will be your G value): ");
+	scanf("%s", nameMiddle);
 
-    n = strlen(nameLast);
-    nameLast = (char*) realloc(nameLast, (n + 1) * sizeof(char)); //reallocate memory based on length of input
+	n = strlen(nameMiddle);
+	nameMiddle = (char *) realloc(nameMiddle, (n + 1) * sizeof(char));
 
-    if (nameLast == NULL)
-    {
-        printf("Memory not allocated for last Name.\n"); //check for allocation success
-        return (1);
-    }
+	if (nameMiddle == NULL)
+	{
+		printf("Memory not allocated for middle Name.\n");
+		return (1);
+	}
 
-    printf("\n");
+	/*begin process for last name input*/
+	nameLast = (char *) malloc(100 * sizeof(char));
 
-    //calculate RGB values for each string
-    R_Value = letter_calculator(nameFirst);
-    G_Value = letter_calculator(nameMiddle);
-    B_Value = letter_calculator(nameLast);
+	if (nameLast == NULL)
+	{
+		printf("Memory not allocated for last Name.\n");
+		return (1);
+	}
 
-    // letter_calculator(nameFirst);
-    // letter_calculator(nameMiddle);
-    // letter_calculator(nameLast);
+	printf("Please enter your last name (this will be your B value): ");
+	scanf("%s", nameLast);
 
-    //print results to user
-    printf("The name you entered was \"%s %s %s\"\n\n", nameFirst, nameMiddle, nameLast);
-    printf("Your RGB values are %d, %d, %d   What a pretty color!\n", R_Value, G_Value, B_Value);
-    printf("Thank you for playing! Goodbye!\n");
+	n = strlen(nameLast);
+	nameLast = (char *) realloc(nameLast, (n + 1) * sizeof(char));
+
+	if (nameLast == NULL)
+	{
+		printf("Memory not allocated for last Name.\n");
+		return (1);
+	}
+
+	printf("\n");
+
+	/*calculate RGB values for each string*/
+	R_Value = letter_calculator(nameFirst);
+	G_Value = letter_calculator(nameMiddle);
+	B_Value = letter_calculator(nameLast);
+
+	/**
+	* Letter_calculator(nameFirst);
+	* Letter_calculator(nameMiddle);
+	* letter_calculator(nameLast);
+	*/
+
+	/*print results to user*/
+	printf("The name you entered was \"%s %s %s\"\n\n",
+		nameFirst, nameMiddle, nameLast);
+	printf("Your RGB values are → %d, %d, %d ← What a pretty color!\n",
+		R_Value, G_Value, B_Value);
+	printf("Thank you for playing! Goodbye!\n");
 
 
-    return (0);
+	return (0);
 }
 
-int letter_calculator(char* str)
+/**
+ * letter_calculator - performs conversion and math to return
+ * a value within the 0 - 255 RGB range
+ *
+ * @str: The string to be converted
+ *
+ * Description: This function aims to follow @jared__cross's
+ * instructions to get a numeric value from a set of letters (such as a name.)
+ * It takes a string of characters, converts them to uppercase,
+ * then subtracts 64 from their ascii value.
+ * This sets their numeric value to A = 1, B = 2, ... Z = 26.
+ * It then adds the numbers up and multiplies the total by 4.
+ * If at this point the value is greater than the RGB maximum of 255,
+ * the function subtracts 256 from the total until it is under 255.
+ * The total is now the RGB value.
+ *
+ * Return: Returns the total as the RGB value
+ */
+
+int letter_calculator(char *str)
 {
-    int size = strlen(str); //initializes the variable 'size' to be equal to how many slots are in str
-    int i;
-    int j;
-    int total = 0;
-    int values[sizeof(str)]; //creates an array to hold the numeric values of each letter
+	/*initializes the variable size to be equal to how many slots are in str*/
+	int size = strlen(str);
 
-    for(i = 0; str[i] != '\0'; i++) //this loop converts letter characters into numeric value
-    {
-        if (isalpha(str[i])) //checks if character is a letter
-        {
-            values[i] = toupper(str[i]); //converts the letter to uppercase
-            values[i] = values[i] - 64; //subtracts 64 from the ascii value of the uppercase letters (setting the values as A = 1 ... Z = 26)
-        }
-        else
-        {
-            values[i] = 0; //if the character is not a letter it's value is set to zero nullifying it's affect on the total
-        }
+	int i;
 
-    }
+	int j;
 
-    j = size;
-    values[j] = '\0';
+	int total = 0;
 
-    for(i = 0; values[i] != '\0'; i++) //this loop adds up the total of all character values
-    {
-        total = total + values[i];
-    }
+	int values[sizeof(str)];
 
-    total = total * 4; //multiplies the total by  4
 
-    while(total > 255) // if the total at this point is greater than the max RGB Value 255 ↓
-    {
-        total = total - 256; // subract 256 until the total is within 255 range
-    }
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (isalpha(str[i]))
+		{
+			values[i] = toupper(str[i]);
+			values[i] = values[i] - 64;
+		}
+		else
+		{
+			values[i] = 0;
+			/*if the character is not a letter set to zero*/
 
-    return (total); //total is now an RGB value based on the specific string of characters passed into the function.
+		}
+
+	}
+
+	j = size;
+	values[j] = '\0';
+
+	for (i = 0; values[i] != '\0'; i++)
+	{
+		total = total + values[i];
+	}
+
+	total = total * 4;
+
+	while (total > 255)
+
+	{
+		total = total - 256;
+	}
+
+	return (total);
+	/**
+	* total is now an RGB value based on the specific
+	* string of characters passed into the function.
+	*/
 
 }
