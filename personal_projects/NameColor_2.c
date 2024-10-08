@@ -42,7 +42,7 @@ int main(void)
 	printf(" combined letters of your name.\n\n");
 
 	/*begin process for First name input*/
-	nameFirst = (char *) malloc(100 * sizeof(char));
+	nameFirst = (char *) malloc(1000 * sizeof(char));
 	/*allocate memory for first name*/
 
 	/*check if memory was allocated correctly*/
@@ -68,7 +68,7 @@ int main(void)
 	}
 
 	/*begin process for middle name input*/
-	nameMiddle = (char *) malloc(100 * sizeof(char));
+	nameMiddle = (char *) realloc(1000 * sizeof(char));
 
 	if (nameMiddle == NULL)
 	{
@@ -89,7 +89,7 @@ int main(void)
 	}
 
 	/*begin process for last name input*/
-	nameLast = (char *) malloc(100 * sizeof(char));
+	nameLast = (char *) malloc(1000 * sizeof(char));
 
 	if (nameLast == NULL)
 	{
@@ -129,6 +129,9 @@ int main(void)
 		R_Value, G_Value, B_Value);
 	printf("Thank you for playing! Goodbye!\n");
 
+	free(nameFirst);
+	free(nameMiddle);
+	free(nameLast);
 
 	return (0);
 }
