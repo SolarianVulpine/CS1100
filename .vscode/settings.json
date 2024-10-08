@@ -8,5 +8,6 @@
         "string_view": "c",
         "initializer_list": "c",
         "string.h": "c"
-    }
+    },
+    "dotnet.defaultSolution": "FizzBuzz.sln"
 }
