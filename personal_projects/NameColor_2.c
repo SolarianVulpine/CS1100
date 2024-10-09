@@ -18,7 +18,7 @@
  */
 
 
-int letter_calculator(char *str);
+int letter_calculator(char *str, int size);
 
 int main(void)
 {
@@ -35,6 +35,12 @@ int main(void)
 	int G_Value;
 
 	int B_Value;
+	
+	int first_length = 0;
+	
+	int middle_length = 0;
+	
+	int last_length = 0;
 
 	/*Introduction*/
 	printf("\nWelcome to the Name Color Generator!\n");
@@ -42,7 +48,7 @@ int main(void)
 	printf(" combined letters of your name.\n\n");
 
 	/*begin process for First name input*/
-	nameFirst = (char *) malloc(1000 * sizeof(char));
+	nameFirst = (char *) malloc(50 * sizeof(char));
 	/*allocate memory for first name*/
 
 	/*check if memory was allocated correctly*/
@@ -68,7 +74,7 @@ int main(void)
 	}
 
 	/*begin process for middle name input*/
-	nameMiddle = (char *) realloc(1000 * sizeof(char));
+	nameMiddle = (char *) malloc(50 * sizeof(char));
 
 	if (nameMiddle == NULL)
 	{
@@ -89,7 +95,7 @@ int main(void)
 	}
 
 	/*begin process for last name input*/
-	nameLast = (char *) malloc(1000 * sizeof(char));
+	nameLast = (char *) malloc(50 * sizeof(char));
 
 	if (nameLast == NULL)
 	{
@@ -111,10 +117,14 @@ int main(void)
 
 	printf("\n");
 
+	first_length = strlen(nameFirst);
+    	middle_length = strlen(nameMiddle);
+    	last_length = strlen(nameLast);
+
 	/*calculate RGB values for each string*/
-	R_Value = letter_calculator(nameFirst);
-	G_Value = letter_calculator(nameMiddle);
-	B_Value = letter_calculator(nameLast);
+	R_Value = letter_calculator(nameFirst, first_length);
+	G_Value = letter_calculator(nameMiddle, middle_length);
+	B_Value = letter_calculator(nameLast, last_length);
 
 	/**
 	* Letter_calculator(nameFirst);
@@ -155,19 +165,15 @@ int main(void)
  * Return: Returns the total as the RGB value
  */
 
-int letter_calculator(char *str)
+int letter_calculator(char *str, int size)
 {
-	/*initializes the variable size to be equal to how many slots are in str*/
-	int size = strlen(str);
+	int *values;
 
 	int i;
 
-	int j;
-
 	int total = 0;
 
-	int values[sizeof(str)];
-
+	values = (int *) malloc((size * sizeof(int)) + 1);
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -185,10 +191,8 @@ int letter_calculator(char *str)
 
 	}
 
-	j = size;
-	values[j] = '\0';
 
-	for (i = 0; values[i] != '\0'; i++)
+	for (i = 0; i < size; i++)
 	{
 		total = total + values[i];
 	}
@@ -200,6 +204,8 @@ int letter_calculator(char *str)
 	{
 		total = total - 256;
 	}
+
+	free(values);
 
 	return (total);
 	/**
