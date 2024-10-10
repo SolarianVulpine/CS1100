@@ -1,0 +1,15 @@
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/RandomType.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/RandomType.AssemblyInfoInputs.cache
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/RandomType.AssemblyInfo.cs
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/RandomType.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/RandomType.sourcelink.json
+/workspaces/CS1100/RandomType/bin/Debug/net8.0/RandomType
+/workspaces/CS1100/RandomType/bin/Debug/net8.0/RandomType.deps.json
+/workspaces/CS1100/RandomType/bin/Debug/net8.0/RandomType.runtimeconfig.json
+/workspaces/CS1100/RandomType/bin/Debug/net8.0/RandomType.dll
+/workspaces/CS1100/RandomType/bin/Debug/net8.0/RandomType.pdb
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/RandomType.dll
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/refint/RandomType.dll
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/RandomType.pdb
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/RandomType.genruntimeconfig.cache
+/workspaces/CS1100/RandomType/obj/Debug/net8.0/ref/RandomType.dll

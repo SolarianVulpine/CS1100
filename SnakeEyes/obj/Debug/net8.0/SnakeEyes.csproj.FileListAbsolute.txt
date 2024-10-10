@@ -1,0 +1,15 @@
+/workspaces/CS1100/SnakeEyes/bin/Debug/net8.0/SnakeEyes
+/workspaces/CS1100/SnakeEyes/bin/Debug/net8.0/SnakeEyes.deps.json
+/workspaces/CS1100/SnakeEyes/bin/Debug/net8.0/SnakeEyes.runtimeconfig.json
+/workspaces/CS1100/SnakeEyes/bin/Debug/net8.0/SnakeEyes.dll
+/workspaces/CS1100/SnakeEyes/bin/Debug/net8.0/SnakeEyes.pdb
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/SnakeEyes.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/SnakeEyes.AssemblyInfoInputs.cache
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/SnakeEyes.AssemblyInfo.cs
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/SnakeEyes.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/SnakeEyes.sourcelink.json
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/SnakeEyes.dll
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/refint/SnakeEyes.dll
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/SnakeEyes.pdb
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/SnakeEyes.genruntimeconfig.cache
+/workspaces/CS1100/SnakeEyes/obj/Debug/net8.0/ref/SnakeEyes.dll
