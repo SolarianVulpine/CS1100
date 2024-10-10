@@ -1,0 +1,15 @@
+/workspaces/CS1100/Console.Read_activity/bin/Debug/net8.0/Console.Read_activity
+/workspaces/CS1100/Console.Read_activity/bin/Debug/net8.0/Console.Read_activity.deps.json
+/workspaces/CS1100/Console.Read_activity/bin/Debug/net8.0/Console.Read_activity.runtimeconfig.json
+/workspaces/CS1100/Console.Read_activity/bin/Debug/net8.0/Console.Read_activity.dll
+/workspaces/CS1100/Console.Read_activity/bin/Debug/net8.0/Console.Read_activity.pdb
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/Console.Read_activity.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/Console.Read_activity.AssemblyInfoInputs.cache
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/Console.Read_activity.AssemblyInfo.cs
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/Console.Read_activity.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/Console.Read_activity.sourcelink.json
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/Console.Read_activity.dll
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/refint/Console.Read_activity.dll
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/Console.Read_activity.pdb
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/Console.Read_activity.genruntimeconfig.cache
+/workspaces/CS1100/Console.Read_activity/obj/Debug/net8.0/ref/Console.Read_activity.dll
