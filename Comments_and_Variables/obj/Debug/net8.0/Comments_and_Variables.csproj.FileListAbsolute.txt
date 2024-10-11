@@ -1,0 +1,15 @@
+/workspaces/CS1100/Comments_and_Variables/bin/Debug/net8.0/Comments_and_Variables
+/workspaces/CS1100/Comments_and_Variables/bin/Debug/net8.0/Comments_and_Variables.deps.json
+/workspaces/CS1100/Comments_and_Variables/bin/Debug/net8.0/Comments_and_Variables.runtimeconfig.json
+/workspaces/CS1100/Comments_and_Variables/bin/Debug/net8.0/Comments_and_Variables.dll
+/workspaces/CS1100/Comments_and_Variables/bin/Debug/net8.0/Comments_and_Variables.pdb
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/Comments_and_Variables.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/Comments_and_Variables.AssemblyInfoInputs.cache
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/Comments_and_Variables.AssemblyInfo.cs
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/Comments_and_Variables.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/Comments_and_Variables.sourcelink.json
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/Comments_and_Variables.dll
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/refint/Comments_and_Variables.dll
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/Comments_and_Variables.pdb
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/Comments_and_Variables.genruntimeconfig.cache
+/workspaces/CS1100/Comments_and_Variables/obj/Debug/net8.0/ref/Comments_and_Variables.dll
