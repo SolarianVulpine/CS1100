@@ -1,0 +1,15 @@
+/workspaces/CS1100/Parsing_Primitive/bin/Debug/net8.0/Parsing_Primitive
+/workspaces/CS1100/Parsing_Primitive/bin/Debug/net8.0/Parsing_Primitive.deps.json
+/workspaces/CS1100/Parsing_Primitive/bin/Debug/net8.0/Parsing_Primitive.runtimeconfig.json
+/workspaces/CS1100/Parsing_Primitive/bin/Debug/net8.0/Parsing_Primitive.dll
+/workspaces/CS1100/Parsing_Primitive/bin/Debug/net8.0/Parsing_Primitive.pdb
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/Parsing_Primitive.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/Parsing_Primitive.AssemblyInfoInputs.cache
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/Parsing_Primitive.AssemblyInfo.cs
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/Parsing_Primitive.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/Parsing_Primitive.sourcelink.json
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/Parsing_Primitive.dll
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/refint/Parsing_Primitive.dll
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/Parsing_Primitive.pdb
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/Parsing_Primitive.genruntimeconfig.cache
+/workspaces/CS1100/Parsing_Primitive/obj/Debug/net8.0/ref/Parsing_Primitive.dll
