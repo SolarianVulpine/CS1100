@@ -1,0 +1,15 @@
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/HTTP_Status_Codes_Assignment.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/HTTP_Status_Codes_Assignment.AssemblyInfoInputs.cache
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/HTTP_Status_Codes_Assignment.AssemblyInfo.cs
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/HTTP_Status_Codes_Assignment.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/HTTP_Status_Codes_Assignment.sourcelink.json
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/bin/Debug/net8.0/HTTP_Status_Codes_Assignment
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/bin/Debug/net8.0/HTTP_Status_Codes_Assignment.deps.json
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/bin/Debug/net8.0/HTTP_Status_Codes_Assignment.runtimeconfig.json
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/bin/Debug/net8.0/HTTP_Status_Codes_Assignment.dll
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/bin/Debug/net8.0/HTTP_Status_Codes_Assignment.pdb
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/HTTP_Status_Codes_Assignment.dll
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/refint/HTTP_Status_Codes_Assignment.dll
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/HTTP_Status_Codes_Assignment.pdb
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/HTTP_Status_Codes_Assignment.genruntimeconfig.cache
+/workspaces/CS1100/HTTP_Status_Codes_Assignment/obj/Debug/net8.0/ref/HTTP_Status_Codes_Assignment.dll

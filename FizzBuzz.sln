@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parsing_Primitive", "Parsin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comments_and_Variables", "Comments_and_Variables\Comments_and_Variables.csproj", "{64FA7A04-676F-43CC-9ACF-CDFDC9C2E1A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTP_Status_Codes_Assignment", "HTTP_Status_Codes_Assignment\HTTP_Status_Codes_Assignment.csproj", "{8EF1413E-9A20-45C7-ACDB-8F66ADD384B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{64FA7A04-676F-43CC-9ACF-CDFDC9C2E1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64FA7A04-676F-43CC-9ACF-CDFDC9C2E1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64FA7A04-676F-43CC-9ACF-CDFDC9C2E1A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF1413E-9A20-45C7-ACDB-8F66ADD384B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF1413E-9A20-45C7-ACDB-8F66ADD384B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF1413E-9A20-45C7-ACDB-8F66ADD384B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF1413E-9A20-45C7-ACDB-8F66ADD384B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

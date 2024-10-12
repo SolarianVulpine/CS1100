@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HTTP_Status_Codes_Assignment/1.0.0": {
+        "runtime": {
+          "HTTP_Status_Codes_Assignment.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HTTP_Status_Codes_Assignment/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
