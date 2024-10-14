@@ -1,0 +1,15 @@
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/Sales_Tax_Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/Sales_Tax_Calculator.AssemblyInfoInputs.cache
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/Sales_Tax_Calculator.AssemblyInfo.cs
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/Sales_Tax_Calculator.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/Sales_Tax_Calculator.sourcelink.json
+/workspaces/CS1100/Sales_Tax_Calculator/bin/Debug/net8.0/Sales_Tax_Calculator
+/workspaces/CS1100/Sales_Tax_Calculator/bin/Debug/net8.0/Sales_Tax_Calculator.deps.json
+/workspaces/CS1100/Sales_Tax_Calculator/bin/Debug/net8.0/Sales_Tax_Calculator.runtimeconfig.json
+/workspaces/CS1100/Sales_Tax_Calculator/bin/Debug/net8.0/Sales_Tax_Calculator.dll
+/workspaces/CS1100/Sales_Tax_Calculator/bin/Debug/net8.0/Sales_Tax_Calculator.pdb
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/Sales_Tax_Calculator.dll
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/refint/Sales_Tax_Calculator.dll
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/Sales_Tax_Calculator.pdb
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/Sales_Tax_Calculator.genruntimeconfig.cache
+/workspaces/CS1100/Sales_Tax_Calculator/obj/Debug/net8.0/ref/Sales_Tax_Calculator.dll

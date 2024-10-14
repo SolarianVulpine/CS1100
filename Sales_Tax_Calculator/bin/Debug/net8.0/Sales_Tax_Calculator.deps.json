@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Sales_Tax_Calculator/1.0.0": {
+        "runtime": {
+          "Sales_Tax_Calculator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sales_Tax_Calculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

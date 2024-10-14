@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comments_and_Variables", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTP_Status_Codes_Assignment", "HTTP_Status_Codes_Assignment\HTTP_Status_Codes_Assignment.csproj", "{8EF1413E-9A20-45C7-ACDB-8F66ADD384B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales_Tax_Calculator", "Sales_Tax_Calculator\Sales_Tax_Calculator.csproj", "{BF75B852-2F0B-47BE-AD02-192E73E307D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Area_Calculator", "Area_Calculator\Area_Calculator.csproj", "{0E77C0D8-2928-4269-8A51-466CD43AD8A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +64,13 @@ Global
 		{8EF1413E-9A20-45C7-ACDB-8F66ADD384B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EF1413E-9A20-45C7-ACDB-8F66ADD384B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EF1413E-9A20-45C7-ACDB-8F66ADD384B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF75B852-2F0B-47BE-AD02-192E73E307D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF75B852-2F0B-47BE-AD02-192E73E307D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF75B852-2F0B-47BE-AD02-192E73E307D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF75B852-2F0B-47BE-AD02-192E73E307D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E77C0D8-2928-4269-8A51-466CD43AD8A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E77C0D8-2928-4269-8A51-466CD43AD8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E77C0D8-2928-4269-8A51-466CD43AD8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E77C0D8-2928-4269-8A51-466CD43AD8A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
