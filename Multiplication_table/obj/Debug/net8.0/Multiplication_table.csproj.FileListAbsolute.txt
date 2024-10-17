@@ -1,0 +1,15 @@
+/workspaces/CS1100/Multiplication_table/bin/Debug/net8.0/Multiplication_table
+/workspaces/CS1100/Multiplication_table/bin/Debug/net8.0/Multiplication_table.deps.json
+/workspaces/CS1100/Multiplication_table/bin/Debug/net8.0/Multiplication_table.runtimeconfig.json
+/workspaces/CS1100/Multiplication_table/bin/Debug/net8.0/Multiplication_table.dll
+/workspaces/CS1100/Multiplication_table/bin/Debug/net8.0/Multiplication_table.pdb
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/Multiplication_table.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/Multiplication_table.AssemblyInfoInputs.cache
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/Multiplication_table.AssemblyInfo.cs
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/Multiplication_table.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/Multiplication_table.sourcelink.json
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/Multiplication_table.dll
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/refint/Multiplication_table.dll
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/Multiplication_table.pdb
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/Multiplication_table.genruntimeconfig.cache
+/workspaces/CS1100/Multiplication_table/obj/Debug/net8.0/ref/Multiplication_table.dll
