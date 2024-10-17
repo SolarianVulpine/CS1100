@@ -17,7 +17,7 @@ int endRows = int.Parse(endRows_Input);
 int startColumns = int.Parse(startColumns_Input);
 int endColumns = int.Parse(endColumns_Input);
 
-// begin loops
+// header loop
 for(int j = startColumns; j <= endColumns; j++)
 {
         Console.Write($"\t{j}");
@@ -25,6 +25,7 @@ for(int j = startColumns; j <= endColumns; j++)
 
 Console.WriteLine();
 
+// line break prints 10 ='s per num of columns
 for(int j = startColumns; j <= endColumns; j++)
 {
         Console.Write("==========");
@@ -32,6 +33,7 @@ for(int j = startColumns; j <= endColumns; j++)
 
 Console.WriteLine();
 
+// loops for times grid
 for(int i = startRows; i <= endRows; i++)
 {
         Console.Write($"{i}\t");

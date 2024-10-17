@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SnakeEyes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+791473458ebee6a2746b71461a6f73e7c7c88638")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38d468c36cdac3f1abfa8139c90b4d7b9a25d74b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SnakeEyes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SnakeEyes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
