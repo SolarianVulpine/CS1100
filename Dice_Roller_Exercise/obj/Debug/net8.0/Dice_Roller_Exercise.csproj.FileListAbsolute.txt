@@ -1,0 +1,15 @@
+/workspaces/CS1100/Dice_Roller_Exercise/bin/Debug/net8.0/Dice_Roller_Exercise
+/workspaces/CS1100/Dice_Roller_Exercise/bin/Debug/net8.0/Dice_Roller_Exercise.deps.json
+/workspaces/CS1100/Dice_Roller_Exercise/bin/Debug/net8.0/Dice_Roller_Exercise.runtimeconfig.json
+/workspaces/CS1100/Dice_Roller_Exercise/bin/Debug/net8.0/Dice_Roller_Exercise.dll
+/workspaces/CS1100/Dice_Roller_Exercise/bin/Debug/net8.0/Dice_Roller_Exercise.pdb
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/Dice_Roller_Exercise.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/Dice_Roller_Exercise.AssemblyInfoInputs.cache
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/Dice_Roller_Exercise.AssemblyInfo.cs
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/Dice_Roller_Exercise.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/Dice_Roller_Exercise.sourcelink.json
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/Dice_Roller_Exercise.dll
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/refint/Dice_Roller_Exercise.dll
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/Dice_Roller_Exercise.pdb
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/Dice_Roller_Exercise.genruntimeconfig.cache
+/workspaces/CS1100/Dice_Roller_Exercise/obj/Debug/net8.0/ref/Dice_Roller_Exercise.dll

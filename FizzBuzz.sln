@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Area_Calculator", "Area_Cal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplication_table", "Multiplication_table\Multiplication_table.csproj", "{2E89C958-5741-4F3B-A4C5-4709A30720A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dice_Roller_Exercise", "Dice_Roller_Exercise\Dice_Roller_Exercise.csproj", "{06883231-2469-4AFB-9057-2A8555FE749B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{2E89C958-5741-4F3B-A4C5-4709A30720A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E89C958-5741-4F3B-A4C5-4709A30720A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E89C958-5741-4F3B-A4C5-4709A30720A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06883231-2469-4AFB-9057-2A8555FE749B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06883231-2469-4AFB-9057-2A8555FE749B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06883231-2469-4AFB-9057-2A8555FE749B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06883231-2469-4AFB-9057-2A8555FE749B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
