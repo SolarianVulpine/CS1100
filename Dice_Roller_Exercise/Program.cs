@@ -30,8 +30,10 @@ diceRolls[4] = diceFive;
 // Declare variable to count roll attempts
 int numRolls = 1;
 
+// While loop should keep the program running until user has reached maximum roll attempts
 while (numRolls < 4)
 {
+        // on the first roll should print Initial instead of Updated
         if (numRolls == 1)
         {
                 Console.WriteLine("Initial Roll: ");
@@ -47,9 +49,11 @@ while (numRolls < 4)
         }
         else
         {
+                // prompts user for whether they want to reroll or hold dice results
                 Console.WriteLine("Enter the dice numbers to reroll (comma-separated, ex: 2,3,5) or leave blank to keep current dice.");
                 string reroll_Input = Console.ReadLine();
 
+                // checks if input is null, empty, or contains value
                 switch (reroll_Input)
                 {
                         case null:
@@ -57,14 +61,17 @@ while (numRolls < 4)
                         case "":
                                 break;
                         case string s when !string.IsNullOrEmpty(s):
-                                string[] dice_to_reroll = reroll_Input.Split(',');
-                                int index = 1;
-                                foreach (string dice in dice_to_reroll)
+                                string[] parsed_dice = reroll_Input.Split(','); // Splits string into array of values when a comma occurs
+                                int[] dice_to_reroll = new int[parsed_dice.Length]; // Stores CSVs into new array
+
+                                for (int i = 0; i < parsed_dice.Length; i++) // typecasts CSVs into ints
                                 {
-                                        int index_dice_to_reroll = int.Parse(dice);
-                                        Console.WriteLine(index_dice_to_reroll);
-                                        
+                                        dice_to_reroll[i] = int.Parse(parsed_dice[i]);
+                                        Console.WriteLine(dice_to_reroll[i]);
                                 }
+
+
+
 
                                 // foreach (int Roll in diceRolls)
                                 // {
@@ -73,12 +80,12 @@ while (numRolls < 4)
                                 //         index++;
                                 // }
                                 break;
-                                default:
+                        default:
                                 break;
 
 
                 }
-                Console.WriteLine("made it here\nbreaking");
+                Console.WriteLine("made it!\nbreaking out of loop");
                 break;
         }
 }
