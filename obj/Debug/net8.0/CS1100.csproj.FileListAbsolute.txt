@@ -1,0 +1,5 @@
+/workspaces/CS1100/obj/Debug/net8.0/CS1100.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/obj/Debug/net8.0/CS1100.AssemblyInfoInputs.cache
+/workspaces/CS1100/obj/Debug/net8.0/CS1100.AssemblyInfo.cs
+/workspaces/CS1100/obj/Debug/net8.0/CS1100.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/obj/Debug/net8.0/CS1100.sourcelink.json
