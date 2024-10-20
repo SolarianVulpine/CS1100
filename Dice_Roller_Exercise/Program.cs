@@ -36,6 +36,7 @@ int rollAttempts = 2;
 // While loop should keep the program running until user has reached maximum roll attempts
 while (numRolls < 4)
 {
+        // Console.WriteLine(numRolls);
         // on the first roll should print Initial instead of Updated
         if (numRolls == 1)
         {
@@ -55,97 +56,87 @@ while (numRolls < 4)
         {
                 // prompts user for whether they want to reroll or hold dice results
                 Console.WriteLine("Enter the dice numbers to reroll (comma-separated, ex: 2,3,5) or leave blank to keep current dice.");
+                Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
                 string reroll_Input = Console.ReadLine();
 
                 // checks if input is null, empty, or contains value
                 switch (reroll_Input)
                 {
-                        case null:
-                                Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
-                                rollAttempts--;
+                        case string s when !string.IsNullOrEmpty(s):
+                                Console.WriteLine("Updated Rolls: ");
+                                int indexer = 1;
+                                for (int k = 0; k < diceRolls.Length; k++)
+                                {
+                                        bool shouldReroll = false;
 
+                                        // Check if this die should be re-rolled
+                                        if (reroll_Input == "")
+                                        {
+                                                // No re-roll requested, just print
+                                        }
+                                        else if (reroll_Input.Length == 1)
+                                        {
+                                                int inputDie = int.Parse(reroll_Input);
+                                                shouldReroll = (k + 1 == inputDie); // Note: Dice are numbered 1-5, but array indices are 0-4
+                                        }
+                                        else
+                                        {
+                                                string[] parsed_dice = reroll_Input.Split(',');
+                                                foreach (string dieStr in parsed_dice)
+                                                {
+                                                        int dieNum = int.Parse(dieStr);
+                                                        if (dieNum == k + 1) // Again, adjusting for 1-based vs 0-based indexing
+                                                        {
+                                                                shouldReroll = true;
+                                                                break;
+                                                        }
+                                                }
+                                        }
+
+                                        Console.Write($"Die {indexer}: ");
+                                        if (shouldReroll)
+                                        {
+                                                diceRolls[k] = rand.Next(1, 6);
+                                        }
+                                        Console.WriteLine(diceRolls[k]);
+                                        indexer++;
+                                }
                                 numRolls++;
+
+                                rollAttempts--;
+                                break;
+                        case null:
+                                Console.WriteLine("Updated Rolls: ");
+                                int index = 1;
+                                for (int i = 0; i < diceRolls.Length; i++)
+                                {
+                                        Console.Write($"Die {index}: ");
+                                        Console.WriteLine(diceRolls[i]);
+                                        index++;
+                                }
+                                numRolls++;
+                                // Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
+                                rollAttempts--;
                                 break;
                         case "":
-                                Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
-                                rollAttempts--;
-
+                                Console.WriteLine("Updated Rolls: ");
+                                index = 1;
+                                for (int i = 0; i < diceRolls.Length; i++)
+                                {
+                                        Console.Write($"Die {index}: ");
+                                        Console.WriteLine(diceRolls[i]);
+                                        index++;
+                                }
                                 numRolls++;
+                                // Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
+                                rollAttempts--;
                                 break;
-                        case string s when !string.IsNullOrEmpty(s):
-                                if (reroll_Input.Length > 1)
-                                {
-                                        string[] parsed_dice = reroll_Input.Split(','); // Splits string into array of values when a comma occurs
-                                        int[] dice_to_reroll = new int[parsed_dice.Length]; // Stores CSVs into new array
 
-                                        for (int i = 0; i < parsed_dice.Length; i++) // typecasts CSVs into ints
-                                        {
-                                                dice_to_reroll[i] = int.Parse(parsed_dice[i]);
-                                                // Console.WriteLine(dice_to_reroll[i]);
-                                        }
-
-                                        int j = 1;
-                                        int k = 0;
-
-                                        Console.WriteLine("Updated Rolls: "); // Should print the updated set of values
-                                        int index = 1;
-
-                                        for (k = 0; k < diceRolls.Length; k++)
-                                        {
-                                                if (diceRolls[k] == dice_to_reroll[j])
-                                                {
-                                                        diceRolls[k] = rand.Next(1, 6);
-                                                        Console.Write($"Die {index}: ");
-                                                        Console.WriteLine(diceRolls[k]);
-                                                        index++;
-                                                        j++;
-                                                }
-                                                else
-                                                {
-                                                        Console.Write($"Die {index}: ");
-                                                        Console.WriteLine(diceRolls[k]);
-                                                        index++;
-                                                }
-                                                k++;
-                                        }
-
-                                        Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
-                                        rollAttempts--;
-
-                                        numRolls++;
-                                }
-                                else if (reroll_Input.Length == 1)
-                                {
-                                        int input = int.Parse(reroll_Input);
-                                        Console.WriteLine("Updated Rolls: "); // Should print the updated set of values
-                                        int index = 1;
-                                        int k = 0;
-
-                                        for (k = 0; k <= diceRolls.Length; k++)
-                                        {
-                                               if (diceRolls[k] != (input - 1))
-                                                {
-                                                        Console.Write($"Die {index}: ");
-                                                        Console.WriteLine(diceRolls[k]);
-                                                        index++;
-                                                }
-                                                 if (diceRolls[k] == (input - 1))
-                                                {
-                                                        diceRolls[k] = rand.Next(1, 6);
-                                                        Console.Write($"Die {index}: ");
-                                                        Console.WriteLine(diceRolls[k]);
-                                                        index++;
-                                                }
-                                                k++;
-                                        }
-
-                                        Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
-                                        rollAttempts--;
-
-                                        numRolls++;
-                                }
-                                break;
                         default:
+                                Console.WriteLine("Invalid");
+                                numRolls++;
+                                // Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
+                                rollAttempts--;
                                 break;
 
 
