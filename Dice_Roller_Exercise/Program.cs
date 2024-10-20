@@ -52,6 +52,22 @@ while (numRolls < 4)
                 numRolls++;
                 // Console.WriteLine("Enter the dice numbers to reroll (comma-separated, ex: 2,3,5) or leave blank to keep current dice.");
         }
+        else if (rollAttempts == 0)
+        {
+                Console.WriteLine("Updated Rolls: ");
+                int sum = 0;
+                int index = 1;
+                for (int i = 0; i < diceRolls.Length; i++)
+                {
+                        diceRolls[i] = rand.Next(1, 6);
+                        Console.Write($"Die {index}: ");
+                        Console.WriteLine(diceRolls[i]);
+                        index++;
+                        sum += diceRolls[i];
+                }
+                Console.WriteLine($"\nFinal Score: {sum}");
+
+        }
         else
         {
                 // prompts user for whether they want to reroll or hold dice results
@@ -118,20 +134,6 @@ while (numRolls < 4)
                                 // Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
                                 rollAttempts--;
                                 break;
-                        case "":
-                                Console.WriteLine("Updated Rolls: ");
-                                index = 1;
-                                for (int i = 0; i < diceRolls.Length; i++)
-                                {
-                                        Console.Write($"Die {index}: ");
-                                        Console.WriteLine(diceRolls[i]);
-                                        index++;
-                                }
-                                numRolls++;
-                                // Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
-                                rollAttempts--;
-                                break;
-
                         default:
                                 Console.WriteLine("Invalid");
                                 numRolls++;
