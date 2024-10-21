@@ -64,7 +64,7 @@ while (numRolls < 4)
                 }
 
                 // Print the counts
-                Console.WriteLine("Value Counts:");
+                // Console.WriteLine("Value Counts:");
                 foreach (var kvp in valueCounts)
                 {
                         if (kvp.Value > 1)
@@ -89,14 +89,14 @@ while (numRolls < 4)
                         }
                 }
 
-                Console.WriteLine("Updated Rolls: ");
+                // Console.WriteLine("Updated Rolls: ");
 
-                int indexer = 1;
+                // int indexer = 1;
                 for (int i = 0; i < diceRolls.Length; i++)
                 {
-                        Console.Write($"Die {indexer}: ");
-                        Console.WriteLine(diceRolls[i]);
-                        index++;
+                        // Console.Write($"Die {indexer}: ");
+                        // Console.WriteLine(diceRolls[i]);
+                        // indexer++;
                         sum += diceRolls[i];
                 }
                 Console.WriteLine($"\nFinal Score: {sum}");
@@ -181,16 +181,16 @@ while (numRolls < 4)
                         //         rollAttempts--;
                         //         break;
                         default:
-                                Console.WriteLine("Updated Rolls: ");
-                                int indexers = 1;
-                                for (int i = 0; i < diceRolls.Length; i++)
-                                {
-                                        Console.Write($"Die {indexers}: ");
-                                        Console.WriteLine(diceRolls[i]);
-                                        indexers++;
-                                }
-                                numRolls++;
-                                rollAttempts--;
+                                // Console.WriteLine("Updated Rolls: ");
+                                // int indexers = 1;
+                                // for (int i = 0; i < diceRolls.Length; i++)
+                                // {
+                                //         Console.Write($"Die {indexers}: ");
+                                //         Console.WriteLine(diceRolls[i]);
+                                //         indexers++;
+                                // }
+                                // numRolls++;
+                                // rollAttempts--;
                                 break;
 
 
