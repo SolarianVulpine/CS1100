@@ -8,29 +8,43 @@ int[] diceRolls = new int[5];
 int numRolls = 0;
 int rollAttempts = 2;
 
+Console.WriteLine("Initial Roll: ");
+int index = 1;
+for (int i = 0; i < diceRolls.Length; i++)
+{
+        diceRolls[i] = rand.Next(1, 6);
+        Console.Write($"Die {index}: ");
+        Console.WriteLine(diceRolls[i]);
+        index++;
+}
+numRolls++;
+
 // While loop should keep the program running until user has reached maximum roll attempts
 while (numRolls < 4)
 {
+        // Console.WriteLine("Enter the dice numbers to reroll (comma-separated, ex: 2,3,5) or leave blank to keep current dice.");
+        // Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
+        // string reroll_Input = Console.ReadLine();
 
 
-        // on the first roll should print Initial instead of Updated
-        if (numRolls == 0)
-        {
-                Console.WriteLine("Initial Roll: ");
-                int index = 1;
-                for (int i = 0; i < diceRolls.Length; i++)
-                {
-                        diceRolls[i] = rand.Next(1, 6);
-                        Console.Write($"Die {index}: ");
-                        Console.WriteLine(diceRolls[i]);
-                        index++;
-                }
-                numRolls++;
-                Console.WriteLine("Enter the dice numbers to reroll (comma-separated, ex: 2,3,5) or leave blank to keep current dice.");
-                Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
-                string reroll_Input = Console.ReadLine();
-        }
-        else if (rollAttempts == 0)
+        // // on the first roll should print Initial instead of Updated
+        // if (numRolls == 0)
+        // {
+        //         Console.WriteLine("Initial Roll: ");
+        //         int index = 1;
+        //         for (int i = 0; i < diceRolls.Length; i++)
+        //         {
+        //                 diceRolls[i] = rand.Next(1, 6);
+        //                 Console.Write($"Die {index}: ");
+        //                 Console.WriteLine(diceRolls[i]);
+        //                 index++;
+        //         }
+        //         numRolls++;
+        //         // Console.WriteLine("Enter the dice numbers to reroll (comma-separated, ex: 2,3,5) or leave blank to keep current dice.");
+        //         // Console.WriteLine($"You have {rollAttempts} rerolls remaining):");
+        //         // string reroll_Input = Console.ReadLine();
+        // }
+        if (rollAttempts == 0)
         {
                 int sum = 0;
                 // Create a dictionary to store counts
@@ -77,10 +91,10 @@ while (numRolls < 4)
 
                 Console.WriteLine("Updated Rolls: ");
 
-                int index = 1;
+                int indexer = 1;
                 for (int i = 0; i < diceRolls.Length; i++)
                 {
-                        Console.Write($"Die {index}: ");
+                        Console.Write($"Die {indexer}: ");
                         Console.WriteLine(diceRolls[i]);
                         index++;
                         sum += diceRolls[i];
@@ -139,7 +153,7 @@ while (numRolls < 4)
 
                                 rollAttempts--;
                                 break;
-                        case "":
+                        case string s when string.IsNullOrEmpty(s):
                                 if (reroll_Input == "")
                                 {
                                         Console.WriteLine("Updated Rolls: ");
@@ -154,18 +168,18 @@ while (numRolls < 4)
                                         rollAttempts--;
                                 }
                                 break;
-                        case null:
-                                Console.WriteLine("Updated Rolls: ");
-                                int index = 1;
-                                for (int i = 0; i < diceRolls.Length; i++)
-                                {
-                                        Console.Write($"Die {index}: ");
-                                        Console.WriteLine(diceRolls[i]);
-                                        index++;
-                                }
-                                numRolls++;
-                                rollAttempts--;
-                                break;
+                        // case null:
+                        //         Console.WriteLine("Updated Rolls: ");
+                        //         int index = 1;
+                        //         for (int i = 0; i < diceRolls.Length; i++)
+                        //         {
+                        //                 Console.Write($"Die {index}: ");
+                        //                 Console.WriteLine(diceRolls[i]);
+                        //                 index++;
+                        //         }
+                        //         numRolls++;
+                        //         rollAttempts--;
+                        //         break;
                         default:
                                 Console.WriteLine("Updated Rolls: ");
                                 int indexers = 1;
