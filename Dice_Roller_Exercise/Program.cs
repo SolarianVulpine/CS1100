@@ -154,8 +154,8 @@ while (numRolls < 4)
                                 rollAttempts--;
                                 break;
                         case string s when string.IsNullOrEmpty(s):
-                                if (reroll_Input == "")
-                                {
+                                // if (reroll_Input == "")
+                                // {
                                         Console.WriteLine("Updated Rolls: ");
                                         int indexee = 1;
                                         for (int i = 0; i < diceRolls.Length; i++)
@@ -166,7 +166,7 @@ while (numRolls < 4)
                                         }
                                         numRolls++;
                                         rollAttempts--;
-                                }
+                                // }
                                 break;
                         // case null:
                         //         Console.WriteLine("Updated Rolls: ");
