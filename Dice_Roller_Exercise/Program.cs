@@ -169,8 +169,8 @@ while (numRolls < 4)
                                                 Console.WriteLine(diceRolls[i]);
                                                 indexee++;
                                         }
-                                        numRolls++;
-                                        rollAttempts--;
+                                        numRolls = 3;
+                                        rollAttempts = 0;
                                 // }
                                 break;
                         // case null:
