@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dice_Roller_Exercise")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7db97f59876f123fef27e9914cd9e4e90c920598")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b64250d33de681877b6d0ce1f5a967eb569bc2b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dice_Roller_Exercise")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dice_Roller_Exercise")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
