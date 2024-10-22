@@ -1,0 +1,15 @@
+/workspaces/CS1100/Character_vs_Enemy_Activity/bin/Debug/net8.0/Character_vs_Enemy_Activity
+/workspaces/CS1100/Character_vs_Enemy_Activity/bin/Debug/net8.0/Character_vs_Enemy_Activity.deps.json
+/workspaces/CS1100/Character_vs_Enemy_Activity/bin/Debug/net8.0/Character_vs_Enemy_Activity.runtimeconfig.json
+/workspaces/CS1100/Character_vs_Enemy_Activity/bin/Debug/net8.0/Character_vs_Enemy_Activity.dll
+/workspaces/CS1100/Character_vs_Enemy_Activity/bin/Debug/net8.0/Character_vs_Enemy_Activity.pdb
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/Character_vs_Enemy_Activity.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/Character_vs_Enemy_Activity.AssemblyInfoInputs.cache
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/Character_vs_Enemy_Activity.AssemblyInfo.cs
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/Character_vs_Enemy_Activity.csproj.CoreCompileInputs.cache
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/Character_vs_Enemy_Activity.sourcelink.json
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/Character_vs_Enemy_Activity.dll
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/refint/Character_vs_Enemy_Activity.dll
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/Character_vs_Enemy_Activity.pdb
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/Character_vs_Enemy_Activity.genruntimeconfig.cache
+/workspaces/CS1100/Character_vs_Enemy_Activity/obj/Debug/net8.0/ref/Character_vs_Enemy_Activity.dll

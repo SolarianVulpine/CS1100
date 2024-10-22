@@ -161,16 +161,16 @@ while (numRolls < 4)
                                 // if (reroll_Input == "")
                                 // {
                                 Console.Clear();
-                                        Console.WriteLine("Updated Rolls: ");
-                                        int indexee = 1;
-                                        for (int i = 0; i < diceRolls.Length; i++)
-                                        {
-                                                Console.Write($"Die {indexee}: ");
-                                                Console.WriteLine(diceRolls[i]);
-                                                indexee++;
-                                        }
-                                        numRolls = 3;
-                                        rollAttempts = 0;
+                                Console.WriteLine("Updated Rolls: ");
+                                int indexee = 1;
+                                for (int i = 0; i < diceRolls.Length; i++)
+                                {
+                                        Console.Write($"Die {indexee}: ");
+                                        Console.WriteLine(diceRolls[i]);
+                                        indexee++;
+                                }
+                                numRolls = 3;
+                                rollAttempts = 0;
                                 // }
                                 break;
                         // case null:
