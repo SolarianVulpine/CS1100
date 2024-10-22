@@ -13,7 +13,7 @@ Console.WriteLine("Initial Roll: ");
 int index = 1;
 for (int i = 0; i < diceRolls.Length; i++)
 {
-        diceRolls[i] = rand.Next(1, 6);
+        diceRolls[i] = rand.Next(1, 7);
         Console.Write($"Die {index}: ");
         Console.WriteLine(diceRolls[i]);
         index++;
@@ -148,7 +148,7 @@ while (numRolls < 4)
                                         Console.Write($"Die {indexer}: ");
                                         if (shouldReroll)
                                         {
-                                                diceRolls[k] = rand.Next(1, 6);
+                                                diceRolls[k] = rand.Next(1, 7);
                                         }
                                         Console.WriteLine(diceRolls[k]);
                                         indexer++;

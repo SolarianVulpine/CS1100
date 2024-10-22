@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplication_table", "Mul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dice_Roller_Exercise", "Dice_Roller_Exercise\Dice_Roller_Exercise.csproj", "{06883231-2469-4AFB-9057-2A8555FE749B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dice_Roller_Classes", "Dice_Roller_Classes\Dice_Roller_Classes.csproj", "{D023297A-1726-4A28-ABC0-44DE9DD3E819}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{06883231-2469-4AFB-9057-2A8555FE749B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06883231-2469-4AFB-9057-2A8555FE749B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06883231-2469-4AFB-9057-2A8555FE749B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D023297A-1726-4A28-ABC0-44DE9DD3E819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D023297A-1726-4A28-ABC0-44DE9DD3E819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D023297A-1726-4A28-ABC0-44DE9DD3E819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D023297A-1726-4A28-ABC0-44DE9DD3E819}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
