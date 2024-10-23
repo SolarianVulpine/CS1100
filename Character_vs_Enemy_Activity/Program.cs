@@ -7,7 +7,23 @@ battle();
 
 void battle()
 {
-        Console.WriteLine("BATTLE!");
+        int heroAtk = rand.Next(10, 25);
+        int heroDef = rand.Next(3, 5);
+        Console.Write("\nWelcome Hero, what is your name: ");
+        string heroName = Console.ReadLine();
+
+        Console.WriteLine($"Welcome {heroName}!");
+        if (heroAtk > 20)
+        {
+                Console.WriteLine($"You've found a mystical sword. It's very strong!");
+        }
+        else if (heroAtk > 15)
+        {
+                Console.WriteLine($"You've found a mystical sword. It's very strong!");
+
+        }
+
+
         Player Moira = new Player(20, 5, "Moira");
         Enemy Esper = new Enemy(15, 5, "Esper");
 
@@ -21,13 +37,15 @@ void battle()
         while (Moira.Current_Player_HP > 0 && Esper.Current_Enemy_HP > 0)
         {
                 int enemyAction = rand.Next(1, 3);
-                Console.Write("Will Moira Attack or Defend: ");
+                Console.Write("\nWill Moira Attack or Defend: ");
                 string playerInput = Console.ReadLine();
                 string playerAction = playerInput.ToLower();
 
                 switch (playerAction)
                 {
                         case "attack":
+
+                                Console.Clear();
 
                                 Moira.Current_Player_HP = Moira.Attack(Esper);
                                 // Console.WriteLine(Moira.Current_Player_HP);
@@ -45,15 +63,35 @@ void battle()
 
                                 break;
                         case "defend":
-                        break;
+                                Console.Clear();
 
-                                if (Moira.Current_Player_HP <= 0)
+                                Moira.Current_Player_HP = Moira.Defend(Esper);
+
+                                if (enemyAction == 1)
                                 {
-                                        Console.WriteLine($"{Moira.CharName} has perished in combat.");
-                                        break;
+                                        Esper.Current_Enemy_HP = Esper.Attack(Moira);
+                                        // Console.WriteLine(Esper.Current_Enemy_HP);
                                 }
+                                else
+                                {
+                                        Esper.Current_Enemy_HP = Esper.Defend(Moira);
+                                }
+
+                                break;
                 }
+                if (Moira.Current_Player_HP <= 0)
+                {
+                        Moira.DeathMessage();
+                        break;
+                }
+                else if (Esper.Current_Enemy_HP <= 0)
+                {
+                        Esper.DeathMessage();
+                        break;
+                }
+
         }
+}
 
 
 public class Player
@@ -79,7 +117,7 @@ public class Player
                 int damageValue = Atk - enemy.Def;
                 int newHP = enemy.Current_Enemy_HP - damageValue;
 
-                Console.WriteLine($"{CharName} has hit {enemy.CharName} for {damageValue} points of damage!");
+                Console.WriteLine($"\n{CharName} attacks!\nThey hit {enemy.CharName} for {damageValue} points of damage!");
                 Console.WriteLine($"{enemy.CharName} now has {newHP} Health Points.");
 
 
@@ -91,11 +129,16 @@ public class Player
                 int damageValue = enemy.Atk - (Def + 5);
                 int newHP = Current_Player_HP - damageValue;
 
-                Console.WriteLine($"{enCharName} has hit {enemy.CharName} for {damageValue} points of damage!");
-                Console.WriteLine($"{enemy.CharName} now has {newHP} Health Points.");
+                Console.WriteLine($"\n{CharName} defends!\n{enemy.CharName} has hit {CharName} for {damageValue} points of damage!");
+                Console.WriteLine($"{CharName} now has {newHP} Health Points.");
 
 
                 return newHP;
+        }
+
+        public void DeathMessage()
+        {
+                Console.WriteLine($"\n{CharName} has perished in combat.");
         }
 
 
@@ -123,7 +166,26 @@ public class Enemy
                 int damageValue = Atk - player.Def;
                 int newHP = player.Current_Player_HP - damageValue;
 
+                Console.WriteLine($"\n{CharName} attacks!\nThey hit {player.CharName} for {damageValue} points of damage!");
+                Console.WriteLine($"{player.CharName} now has {newHP} Health Points.");
+
                 return newHP;
+        }
+        public int Defend(Player player)
+        {
+                int damageValue = player.Atk - (Def + 5);
+                int newHP = Current_Enemy_HP - damageValue;
+
+                Console.WriteLine($"\n{CharName} defends!\n{player.CharName} has hit {CharName} for {damageValue} points of damage!");
+                Console.WriteLine($"{CharName} now has {newHP} Health Points.");
+
+
+                return newHP;
+        }
+
+        public void DeathMessage()
+        {
+                Console.WriteLine($"\n{CharName} has perished in combat.");
         }
 
 }
